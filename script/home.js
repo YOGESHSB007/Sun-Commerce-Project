@@ -1,0 +1,208 @@
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
+
+// Sticky Navbar
+const navbar = document.getElementById("navbar");
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    navbar.classList.remove("fixed", "top-0", "left-0", "right-0");
+    navbar.classList.add("relative");
+  } else {
+    navbar.classList.remove("relative");
+    navbar.classList.add("fixed", "top-0", "left-0", "right-0");
+  }
+
+  lastScroll = currentScroll;
+});
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      const offset = 80;
+      const targetPosition = target.offsetTop - offset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.remove("opacity-0", "pointer-events-none");
+    backToTopButton.classList.add("opacity-100");
+  } else {
+    backToTopButton.classList.add("opacity-0", "pointer-events-none");
+    backToTopButton.classList.remove("opacity-100");
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// Intersection Observer for Animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-in");
+    }
+  });
+}, observerOptions);
+
+// Observe all sections
+document.querySelectorAll("section").forEach((section) => {
+  observer.observe(section);
+});
+
+// Contact Button Actions
+const contactButtons = document.querySelectorAll(
+  "button:not(#mobile-menu-btn):not(#backToTop)"
+);
+contactButtons.forEach((button) => {
+  if (button.textContent.includes("Contact Us")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#contact";
+    });
+  }
+  if (button.textContent.includes("Residential")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#residential";
+    });
+  }
+  if (button.textContent.includes("Commercial")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#commercial";
+    });
+  }
+});
+
+// Active Navigation Link
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("text-purple-600", "font-bold");
+    if (link.getAttribute("href").slice(1) === current) {
+      link.classList.add("text-purple-600", "font-bold");
+    }
+  });
+});
+
+// Form Validation (if you add a contact form)
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function validatePhone(phone) {
+  const re = /^[\d\s\+\-\(\)]+$/;
+  return re.test(phone);
+}
+
+// Add loading animation
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
+// Console welcome message
+console.log(
+  "%cSun Commerce",
+  "color: #9333ea; font-size: 24px; font-weight: bold;"
+);
+console.log("%cLet Solar be your saviour!", "color: #f59e0b; font-size: 16px;");
+console.log("Website: sun-commerce.com.au");
+console.log("Phone: +61 404 451 977");
+
+// Animate steps inside #process on scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll("#process .process-step");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("opacity-100", "translate-y-0");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  steps.forEach((step) => {
+    step.classList.add(
+      "opacity-0",
+      "translate-y-10",
+      "transition",
+      "duration-700"
+    );
+    observer.observe(step);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("opacity-100", "translate-y-0");
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  cards.forEach((card) => {
+    card.classList.add(
+      "opacity-0",
+      "translate-y-10",
+      "transition",
+      "duration-700"
+    );
+    observer2.observe(card);
+  });
+});

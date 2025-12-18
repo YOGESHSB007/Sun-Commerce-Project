@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sun Commerce</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="styles/aboutus.css" rel="stylesheet">
+  <link href="styles/output.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+    <nav id="navbar" class="navbar-dark shadow-lg bg-[#1A2259] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center w-[55px]">
+                    <div >
+                        <a href="index.html" class="text-blue-600 "><img src="images/logo-4-2.png" alt="logo" > </a>
+                    </div>
+                    <!-- <span class="text-xl font-bold text-white">Sun Commerce</span> -->
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-center space-x-8 items-center">
+                    <a href="#home" class="text-white hover:text-green-400 transition font-medium">Home</a>
+                    <a href="#residential" class="text-white hover:text-green-400 transition font-medium">Residential</a>
+                    <a href="#commercial" class="text-white hover:text-green-400 transition font-medium">Commercial</a>
+                    <a href="#about" class="text-green-400 hover:text-green-400 transition font-medium">About Us</a>
+                    <a href="#faq" class="text-white hover:text-green-400 transition font-medium">FAQ</a>
+                    <a href="#contact" class="text-white hover:text-green-400 transition font-medium">Blog</a>
+                    
+                </div>
+                <button class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                    <span>Free Estimate</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#home" class="block py-2 text-white hover:text-green-400">Home</a>
+                <a href="#residential" class="block py-2 text-white hover:text-green-400">Residential</a>
+                <a href="#commercial" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                <a href="#about" class="block py-2 text-white hover:text-green-400">About Us</a>
+                <a href="#faq" class="block py-2 text-white hover:text-green-400">FAQ</a>
+                <a href="#contact" class="block py-2 text-white hover:text-green-400">Blog</a>
+                <button class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                    Free Estimate
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb Section -->
+    <section class="hero-section py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="" >
+                <img src="images/bg-1.jpg" alt="">
+            </div>
+            <!-- <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div> -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold pt-20 text-white mb-4">About Us</h1>
+                <div class="flex items-center justify-center text-xl space-x-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home /</a>
+                    
+                    <span class="text-green-400">About Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fast Service Cards Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Fast Service -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg animate-fadeInUp delay-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#1A2259] to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">Fast Service</h3>
+                    <p class="text-gray-600 leading-relaxed">Quick and efficient solar installation services</p>
+                </div>
+
+                <!-- Affordable Price -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg animate-fadeInUp delay-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#1A2259] to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dollar-sign text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">Affordable Price</h3>
+                    <p class="text-gray-600 leading-relaxed">Competitive pricing for quality solar solutions</p>
+                </div>
+
+                <!-- 24/7 Support -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg animate-fadeInUp delay-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#1A2259] to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">24/7 Support</h3>
+                    <p class="text-gray-600 leading-relaxed">Round-the-clock customer assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fadeInLeft">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800" alt="Solar Panels" class="rounded-3xl shadow-2xl">
+                        <div class="absolute -bottom-6 -right-6 bg-[#1A2259] text-white p-8 rounded-2xl shadow-xl">
+                            <h4 class="text-4xl font-bold mb-2">15+</h4>
+                            <p class="text-gray-300">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-fadeInRight">
+                    <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-6">Who We Are?</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        We are one of the Australia's leading Solar retailers headquartered in Melbourne, Victoria.
+                    </p>
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 mb-6">
+                        <h3 class="text-2xl font-bold text-[#1A2259] mb-3 flex items-center">
+                            <i class="fas fa-target text-blue-600 mr-3"></i>
+                            Our Aim
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Helping fellow Australians slash skyrocketing energy bills, tackling climate change, and giving Australia a healthier, sustainable future.
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#1A2259]">Certified & Trusted</h4>
+                            <p class="text-gray-600">Quality installations across Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Service Section -->
+    <section class="py-20 bg-gradient-to-br from-[#1A2259] to-[#2D3B7A] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <i class="fas fa-heart text-white text-[500px] absolute -top-20 -right-20 animate-float"></i>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center animate-scaleIn">
+                <div class="inline-block mb-6">
+                    <div class="w-20 h-20 bg-white/20 backdrop-blur-lg rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-hands-helping text-5xl"></i>
+                    </div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Community Service is at Our Heart</h2>
+                <p class="text-xl text-gray-200 leading-relaxed">
+                    Whether it be tackling devastating bushfires or helping the world to fight breast cancer. Here at Sun Commerce, we believe in giving back to the society and that's why we donate a significant portion of our profits to help fight the community crisis.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-12">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <i class="fas fa-fire-extinguisher text-4xl mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Bushfire Relief</h4>
+                        <p class="text-gray-300">Supporting communities affected by natural disasters</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <i class="fas fa-ribbon text-4xl mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Health Initiatives</h4>
+                        <p class="text-gray-300">Contributing to breast cancer research and awareness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar FAQs Section -->
+    <section class="py-20 bg-white" id="faq">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-4">
+              Solar FAQs
+            </h2>
+            <p class="text-xl text-gray-600">
+              Find answers to commonly asked questions
+            </p>
+          </div>
+      
+          <div class="grid md:grid-cols-2 gap-5 max-w-7xl mx-auto space-y-4">
+      
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                  Is it possible to increase the size of my solar system in the future?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>This depends on your roof space and the size of the inverter. If you have sufficient roof space and additional capacity in the inverter you could increase the size of your system. Or you could add a second system to your roof. </p>
+                    <p><b>Please note:</b> Currently, the solar Feed-in Tariffs in each state have limits on the system size which to they apply. Increasing the size of an existing solar power system could affect your eligibility for a Feed-in Tariff. Please call us for further information.</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                    How much roof space is required?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>The amount of roof space required depends on the size of the system. For example, a small 1.5kW system requires 12m² of roof space. This is ideally an un-shaded and north-facing part of the roof. The system is modular and can be arranged in a way that best suits the roof.</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                    What is net metering?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>Net metering is the system that utilities use to credit solar energy system owners for the electricity produced by their solar panels. With net metering, you only pay for the electricity that you use beyond what your solar panels can generate. Net metering policies differ from state to state from Sydney to Perth to Melbourne.</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                    How do I keep a track  of my solar system performance?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>It’s easy to check your solar power system at any time. The majority of inverters offer a built-in display that gives you a live data feed of how much power your system is generating. Most systems will give you historical data showing how your system has been performing over time. If your solar inverter is wi-fi ready you can see your performance through web application on your mobile.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                  Do solar panels work during blackout?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>If your solar panel system is connected to the grid, it will shut off in the event of a blackout. This is to prevent emergency responders and electricity utility repair-people from being injured by your panels sending power back to the grid. However, there are certain inverters you can buy that provide backup power in a blackout when paired with a battery.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- FAQ ITEM -->
+            <div class="faq-item bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button class="faq-button w-full flex items-center justify-between p-6 text-left">
+                <h3 class="text-lg font-bold text-[#1A2259] pr-4">
+                  How long does installation take?
+                </h3>
+                <span class="faq-icon transition-transform duration-300">
+                  <i class="fas fa-chevron-down text-xl text-[#1A2259]"></i>
+                </span>
+              </button>
+              <div class="faq-answer px-6 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="pb-6 text-gray-600 leading-relaxed">
+                    <p>It's hard to say about average installation time without knowing the size of solar power system. Bigger the system, longer the time it require to be installed. Let's take 5kW system for installation which takes around 3-5 hrs, start to finish.</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Contact Us Section -->
+    <!-- <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600">Let's get in touch</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                
+                <div class="animate-fadeInLeft">
+                    <div class="bg-gradient-to-br from-[#1A2259] to-[#2D3B7A] rounded-3xl p-8 text-white h-full">
+                        <h3 class="text-3xl font-bold mb-8">Get in Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-lg rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Address</h4>
+                                    <p class="text-gray-300">Unit 10/78, Willandra Drive,<br>Epping, Vic - 3076.</p>
+                                    <p class="text-sm text-gray-400 mt-2">Sunday Closed</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-lg rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Phone</h4>
+                                    <a href="tel:+61404451977" class="text-gray-300 hover:text-white transition">+61 404 451 977</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-lg rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Email</h4>
+                                    <a href="mailto:info@suncommerce.com.au" class="text-gray-300 hover:text-white transition">info@suncommerce.com.au</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="animate-fadeInRight">
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:border-[#1A2259] focus:outline-none transition">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:border-[#1A2259] focus:outline-none transition">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Your Phone" class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:border-[#1A2259] focus:outline-none transition">
+                        </div>
+                        <div>
+                            <select class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:border-[#1A2259] focus:outline-none transition text-gray-700">
+                                <option value="">Select Subject</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:border-[#1A2259] focus:outline-none transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#1A2259] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#2D3B7A] transition transform hover:scale-105 flex items-center justify-center space-x-2">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Sun Commerce</h3>
+                    <p class="text-gray-400">Your trusted solar energy partner in Australia.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#residential" class="text-gray-400 hover:text-white transition">Residential</a></li>
+                        <li><a href="#commercial" class="text-gray-400 hover:text-white transition">Commercial</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Solar Installation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Consultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+61 404 451 977</p>
+                    <p class="text-gray-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Melbourne, Victoria</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#1A2259] text-white p-4 rounded-2xl shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="script/aboutus.js"></script>
+</body>
+</html>
