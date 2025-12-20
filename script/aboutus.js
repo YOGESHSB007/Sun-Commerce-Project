@@ -1,20 +1,36 @@
- // Intersection Observer for scroll animations
- const observerOptions = {
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
+
+// Intersection Observer for scroll animations
+ const observerOptions4 = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observer4 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.animationPlayState = 'running';
         }
     });
-}, observerOptions);
+}, observerOptions4);
 
 document.querySelectorAll('.animate-fadeInUp, .animate-fadeInLeft, .animate-fadeInRight, .animate-scaleIn').forEach(el => {
     el.style.animationPlayState = 'paused';
-    observer.observe(el);
+    observer4.observe(el);
 });
 
 // FAQ Accordion (fixed for 2-column layout)
@@ -76,4 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+
+
+
   

@@ -18,30 +18,34 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <!-- Logo -->
-                <div class="flex items-center w-[55px]">
-                    <div>
-                        <a href="index.html" class="text-blue-600 "><img src="images/logo-4-2.png" alt="logo"> </a>
+                <div class="flex items-center ">
+                    <div class="flex justify-center items-center ">
+                        <a href="index.html" class="w-14 pr-1  text-blue-600 "><img src="images/logo ttoopp.png" alt="logo"> </a>
+                        <a href="index.html" class="w-24  text-blue-600 "><img src="images/logo ddoodo.png" alt="logos"> </a>
                     </div>
                     <!-- <span class="text-xl font-bold text-white">Sun Commerce</span> -->
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex justify-center space-x-8 items-center">
-                    <a href="#home" class="text-white hover:text-green-400 transition font-medium">Home</a>
-                    <a href="#residential"
+                    <a href="index.html" class="text-white hover:text-green-400 transition font-medium">Home</a>
+                    <a href="Residential.html"
                         class="text-white hover:text-green-400 transition font-medium">Residential</a>
-                    <a href="#commercial"
+                    <a href="Commercial.html"
                         class="text-green-400 hover:text-green-400 transition font-medium">Commercial</a>
-                    <a href="#about" class="text-white hover:text-green-400 transition font-medium">About Us</a>
-                    <a href="#faq" class="text-white hover:text-green-400 transition font-medium">FAQ</a>
-                    <a href="#contact" class="text-white hover:text-green-400 transition font-medium">Blog</a>
+                    <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
+                    
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
 
                 </div>
-                <button
-                    class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                <div class="hidden md:flex">
+                    <button  onclick="window.location.href='contact.html'"
+                    class="bg-green-500   text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
                     <span>Free Estimate</span>
                     <i class="fas fa-arrow-right"></i>
                 </button>
+                </div>
 
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden text-white">
@@ -51,13 +55,14 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="#home" class="block py-2 text-white hover:text-green-400">Home</a>
-                <a href="#residential" class="block py-2 text-white hover:text-green-400">Residential</a>
-                <a href="#commercial" class="block py-2 text-white hover:text-green-400">Commercial</a>
-                <a href="#about" class="block py-2 text-white hover:text-green-400">About Us</a>
-                <a href="#faq" class="block py-2 text-white hover:text-green-400">FAQ</a>
-                <a href="#contact" class="block py-2 text-white hover:text-green-400">Blog</a>
-                <button class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                <a href="index.html" class="block py-2 text-white hover:text-green-400">Home</a>
+                <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+                
+                <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+                <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
+                <button onclick="window.location.href='contact.html'" class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
                     Free Estimate
                 </button>
             </div>

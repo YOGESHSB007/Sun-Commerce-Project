@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sun Commerce</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="styles/blogs.css" rel="stylesheet">
+  <link href="styles/output.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <nav id="navbar"
+        class="navbar-dark shadow-lg bg-[#1A2259] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center ">
+                    <div class="flex justify-center items-center ">
+                        <a href="index.html" class="w-14 mr-1  text-blue-600 "><img src="images/logo ttoopp.png" alt="logo"> </a>
+                        <a href="index.html" class="w-24   text-blue-600 "><img src="images/logo ddoodo.png" alt="logos"> </a>
+                    </div>
+                    <!-- <span class="text-xl font-bold text-white">Sun Commerce</span> -->
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-center space-x-8 items-center">
+                    
+                    <a href="Residential.html"
+                        class="text-white hover:text-green-400 transition font-medium">Residential</a>
+                    <a href="Commercial.html"
+                        class="text-white hover:text-green-400 transition font-medium">Commercial</a>
+                    <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
+                    
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="blogs.html" class="text-green-400 hover:text-green-400 transition font-medium">Blogs</a>
+
+                </div>
+                <div class="hidden md:flex">
+                    <button  onclick="window.location.href='contact.html'"
+                    class="bg-green-500   text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                    <span>Free Estimate</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                
+                <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+                
+                <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+                <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
+                <button onclick="window.location.href='contact.html'" class=" text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                    Free Estimate
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="">
+                <!-- <img src="images/bg-1.jpg" alt=""> -->
+            </div>
+            <!-- <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div> -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold pt-20 text-white mb-4">Blog</h1>
+                <div class="flex items-center justify-center text-xl space-x-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home /</a>
+
+                    <span class="text-green-400">Blog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Header Section -->
+    <!-- <section class="py-20 bg-gradient-to-br from-[#1A2259] to-[#2D3B7A] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Solar Energy Insights</h1>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Stay informed with the latest trends, tips, and technologies in solar energy
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Search and Filter Section -->
+    <section class="py-12 bg-white sticky top-0 z-40 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 gap-4">
+                <!-- Search Bar -->
+                <div class="w-full md:w-1/2 animate-fadeInLeft">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            id="searchInput"
+                            placeholder="Search articles..." 
+                            class="search-input w-full px-6 py-4 pl-14 border-2 border-gray-200 rounded-full focus:border-[#1A2259] focus:outline-none transition text-gray-700"
+                        >
+                        <!-- <i class="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i> -->
+                    </div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-3 justify-center animate-fadeInRight">
+                    <button class="filter-btn active px-6 py-2 text-gray-600 hover:text-[#1A2259] transition font-medium" data-category="all">
+                        All Posts
+                    </button>
+                    <button class="filter-btn px-6 py-2 text-gray-600 hover:text-[#1A2259] transition font-medium" data-category="Solar Installation">
+                        Installation
+                    </button>
+                    <button class="filter-btn px-6 py-2 text-gray-600 hover:text-[#1A2259] transition font-medium" data-category="Battery Storage">
+                        Battery
+                    </button>
+                    <button class="filter-btn px-6 py-2 text-gray-600 hover:text-[#1A2259] transition font-medium" data-category="Energy Efficiency">
+                        Efficiency
+                    </button>
+                    <button class="filter-btn px-6 py-2 text-gray-600 hover:text-[#1A2259] transition font-medium" data-category="Solar Maintenance">
+                        Maintenance
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <!-- Blog Grid Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 animate-fadeInUp">
+                <h2 class="text-4xl font-bold text-[#1A2259] mb-2">Latest Articles</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#1A2259] to-blue-600"></div>
+            </div>
+
+            <div id="blogGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-100" data-category="Battery Storage">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=800" alt="Battery Storage" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-blue-100 text-[#1A2259] rounded-full text-sm font-semibold">
+                                Battery Storage
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>7 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            Understanding Solar Battery Installation for Homes and Businesses
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Solar battery installation allows excess solar energy to be stored for later use. Batteries improve energy reliability...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 30, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-200" data-category="Solar Systems">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800" alt="Commercial Solar" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
+                                Solar Systems
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>6 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            Key Steps Involved in a Commercial Solar Installation
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Commercial solar installations involve site assessment, system design, regulatory approvals, and professional installation...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 28, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-300" data-category="Energy Efficiency">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800" alt="Energy Efficiency" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-semibold">
+                                Energy Efficiency
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>5 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            How Solar Panels Improve Long-Term Energy Efficiency
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Solar panels convert sunlight into usable electricity, reducing dependence on grid power. Proper installation and system sizing...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 26, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-400" data-category="Solar Maintenance">
+                    <div class="overflow-hidden h-64">
+                        <img src="images/ezgif.com-gif-maker(8).png" alt="Solar Maintenance" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
+                                Solar Maintenance
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>5 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            The Importance of Maintenance After Solar Installation
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Regular inspection and maintenance of solar panels and inverters ensure safety and peak performance...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 24, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-500" data-category="Battery Solutions">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800" alt="Battery Solutions" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">
+                                Battery Solutions
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>8 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            Choosing the Right Battery for Your Solar Power System
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Selecting the right battery depends on energy usage, system size, and backup requirements. Modern lithium-ion batteries...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 22, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden animate-fadeInUp delay-600" data-category="Solar Installation">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800" alt="Solar Installation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="category-badge inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-semibold">
+                                Solar Installation
+                            </span>
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>6 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-3 hover:text-blue-600 transition cursor-pointer">
+                            Professional Solar Installation: What to Expect
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Understanding the professional installation process helps homeowners prepare and ensures a smooth transition to solar energy...
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>Oct 20, 2024
+                            </span>
+                            <button class="text-[#1A2259] font-semibold hover:text-blue-600 transition flex items-center space-x-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <!-- <div class="text-center mt-12 animate-fadeInUp">
+                <button class="bg-[#1A2259] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2D3B7A] transition transform hover:scale-105 flex items-center space-x-2 mx-auto">
+                    <span>Load More Articles</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div> -->
+        </div>
+    </section>
+    <!-- Featured Post Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 animate-fadeInUp">
+                <h2 class="text-4xl font-bold text-[#1A2259] mb-2">Featured Article</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#1A2259] to-blue-600"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center bg-white rounded-3xl shadow-2xl overflow-hidden animate-scaleIn">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800" alt="Featured" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-8 md:p-12">
+                    <span class="inline-block px-4 py-2 bg-gradient-to-r from-[#1A2259] to-blue-600 text-white rounded-full text-sm font-semibold mb-4">
+                        Solar Installation
+                    </span>
+                    <h3 class="text-3xl md:text-4xl font-bold text-[#1A2259] mb-4">
+                        Why Residential Solar Installation Is a Smart Investment
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Residential solar installation helps homeowners reduce electricity bills, increase property value, and move toward energy independence. With rising energy costs, installing solar panels provides long-term savings...
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock mr-2"></i>
+                                <span>5 min read</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-calendar mr-2"></i>
+                                <span>Nov 2, 2024</span>
+                            </div>
+                        </div>
+                        <!-- <button class="bg-[#1A2259] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#2D3B7A] transition transform hover:scale-105">
+                            Read More
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gradient-to-r from-[#1A2259] to-[#2D3B7A] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <i class="fas fa-envelope text-[500px] absolute -bottom-20 -right-20"></i>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center animate-scaleIn">
+                <i class="fas fa-paper-plane text-6xl mb-6"></i>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Subscribe to Our Newsletter
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Get the latest solar energy insights delivered directly to your inbox
+                </p>
+                <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        class="flex-1 px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-4 focus:ring-white/30 transition"
+                    >
+                    <button type="submit" class="bg-white text-[#1A2259] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 flex items-center justify-center space-x-2">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1F2937] text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate-fadeInUp">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-16 h-16  rounded-lg flex items-center justify-center">
+                            <img src="images/logo-4-2.png" class="rounded-2xl m-6" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Sun Commerce</h3>
+                            <p class="text-sm text-gray-400">Solar Battery And Beyond</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We are one of the Australia's leading Solar retailers headquartered in Melbourne, Victoria.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Follow us:</h4>
+                        <div class="flex space-x-3">
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div class="animate-fadeInUp delay-100">
+                    <h3 class="text-xl font-bold mb-6">Get in touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Unit 10/78, Willandra Drive,<br>
+                                    Epping, VIC - 3076
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@suncommerce.com.au" class="text-gray-300 hover:text-blue-400 transition">
+                                info@suncommerce.com.au
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+61404451977" class="text-gray-300 hover:text-blue-400 transition">
+                                +61 404 451 977
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fadeInUp delay-200">
+                    <h3 class="text-xl font-bold mb-6">Quick Link</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Residential
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Commercial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="animate-fadeInUp delay-300">
+                    <h3 class="text-xl font-bold mb-6">Working hours</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Monday - Friday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 05:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Saturday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 02:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sunday</p>
+                                <p class="text-gray-400 text-sm">Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        &copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button> -->
+    <button class="scroll-to-top bg-[#1A2259]   fill-amber-50 size-8" id="backToTop" onclick="scrollToTop()">
+        <svg class="rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043"
+            enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+            <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+        </svg>
+    </button>
+
+    <script src="script/blogs.js"></script>
+
+</body>
+</html>
