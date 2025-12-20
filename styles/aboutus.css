@@ -104,19 +104,16 @@
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-item.active .faq-answer {
-    max-height: 500px;
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(180deg);
+    transition: max-height 0.5s ease;
 }
 
 .faq-icon {
     transition: transform 0.3s ease;
+}
+
+/* Rotate icon when FAQ is open */
+.rotate-180 {
+    transform: rotate(180deg);
 }
 
 html {
@@ -125,16 +122,121 @@ html {
 
 .hero-section {
     background: linear-gradient(90deg, rgba(30, 41, 59, 0.85) 0%, rgba(30, 41, 59, 0.4) 100%), 
-                url('../images/bg-1.jpg') no-repeat ;
+                url('../images/bg-1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    
     position: relative;
     min-height: 50vh;
 }
 
 .faq-button:hover {
     background-color: rgba(0, 0, 0, 0.02);
-  }
+}
 
+/* Social Icons */
+.social-icon {
+    transition: all 0.3s ease;
+}
 
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Footer Links */
+.footer-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3B82F6;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #3B82F6;
+}
+
+/* Back to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Fix for navbar logo spacing */
+.navbar-dark {
+    backdrop-filter: blur(10px);
+}
+
+/* CRITICAL: Ensure footer stays dark - Force background color */
+footer {
+    background-color: #1F2937 !important;
+}
+
+footer * {
+    color: inherit;
+}
+
+/* Ensure footer text colors */
+footer h3,
+footer h4,
+footer p,
+footer span {
+    color: white !important;
+}
+
+footer .text-gray-300 {
+    color: #d1d5db !important;
+}
+
+footer .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+/* Animation pause state */
+.animate-fadeInUp,
+.animate-fadeInLeft,
+.animate-fadeInRight,
+.animate-scaleIn {
+    animation-play-state: paused;
+}
+
+/* When visible, play animations */
+.animate-fadeInUp.visible,
+.animate-fadeInLeft.visible,
+.animate-fadeInRight.visible,
+.animate-scaleIn.visible {
+    animation-play-state: running;
+}
