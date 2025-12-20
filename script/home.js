@@ -206,3 +206,85 @@ document.addEventListener("DOMContentLoaded", () => {
     observer2.observe(card);
   });
 });
+
+
+// Intersection Observer for animations
+const observerOptions4 = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer4 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+      }
+  });
+}, observerOptions4);
+
+document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+  el.style.animationPlayState = 'paused';
+  observer4.observe(el);
+});
+
+
+// Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+          target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+          });
+      }
+  });
+});
+
+// Add hover effect to social icons
+document.querySelectorAll('.social-icon').forEach(icon => {
+  icon.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px) scale(1.1) rotate(5deg)';
+  });
+  
+  icon.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+  });
+});
+
+// Dynamic year for copyright
+const yearElement = document.querySelector('footer p');
+if (yearElement && yearElement.textContent.includes('<?php')) {
+  yearElement.textContent = `© ${new Date().getFullYear()} Sun Commerce. All rights reserved.`;
+}
+
+
+// Animate process timeline steps
+const processSteps = document.querySelectorAll(".process-timeline > div");
+const processObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateX(0)";
+        }, index * 150);
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+processSteps.forEach((step, index) => {
+  step.style.opacity = "0";
+  step.style.transition = "all 0.6s ease-out";
+  if (index % 2 === 0) {
+    step.style.transform = "translateX(-50px)";
+  } else {
+    step.style.transform = "translateX(50px)";
+  }
+  processObserver.observe(step);
+});

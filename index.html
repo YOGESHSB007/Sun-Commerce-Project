@@ -35,7 +35,7 @@
                         class="text-white hover:text-green-400 transition font-medium">Commercial</a>
                     <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
                     
-                    <a href="contact.html" class="text-green-400 hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
                     <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
 
                 </div>
@@ -120,7 +120,7 @@
         <div class="container pt-40  mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8 -mt-32">
                 <div class="card group bg-white rounded-2xl shadow-2xl p-8 transition-all duration-500
-                hover:-translate-y-3 hover:scale-50 hover:shadow-xl" style="animation-delay: 0.1s">
+                hover:-translate-y-3 hover:scale-80 hover:shadow-xl" style="animation-delay: 0.1s">
                     <div class="text-purple-600 mb-4">
                         <i class="fas fa-building text-5xl transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6"></i>
                     </div>
@@ -143,7 +143,7 @@
                 </div>
                 
                 <div class="card group bg-white rounded-2xl shadow-2xl p-8 transition-all duration-500
-                hover:-translate-y-3 hover:scale-50 hover:shadow-xl" style="animation-delay: 0.3s">
+                hover:-translate-y-3 hover:scale-80 hover:shadow-xl" style="animation-delay: 0.3s">
                     <div class="text-purple-600 mb-4">
                         <i class="fas fa-home text-5xl transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6"></i>
                     </div>
@@ -157,143 +157,130 @@
     </section>
 
     <!-- Work Process Section -->
-    <section id="process" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">
-                Our Work Process
-            </h2>
-            
-            <div class="max-w-6xl mx-auto relative">
-                <div class="timeline-line hidden md:block"></div>
-                
+    <section class="content-section py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Work Process</h2>
+                <!-- <p class="text-gray-600 text-lg">From setup to success in just 5 simple steps</p> -->
+            </div>
+
+            <div class="process-timeline space-y-12 md:space-y-16">
                 <!-- Step 1 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center mb-16">
-                    <div class="md:text-right order-2 md:order-1">
-                        <div class="bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center justify-end space-x-4 mb-4">
-                                <h3 class="text-2xl font-bold text-white">Initial Consultation</h3>
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-comments text-orange-500 text-3xl"></i>
-                                </div>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                At your request, we make an initial consultation. We listen to your needs, understand your requirements and plan accordingly.
-                            </p>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 1
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Initial Consultation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            At your request, we make an initial consultation. We listen to your needs, understand your requirements and plan accordingly.
+                        </p>
                     </div>
-                    <div class="order-1 md:order-2 flex justify-center md:justify-start">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                    <div class="flex justify-center md:justify-start">
+                        <div
+                            class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse-custom">
                             1
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Step 2 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center mb-16">
-                    <div class="flex justify-center md:justify-end">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:order-2 hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-indigo-500 to-blue-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 2
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Site Inspection</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            After our initial consultation, we will book a site inspection to understand the job at hand.
+                        </p>
+                    </div>
+                    <div class="md:order-1 flex justify-center md:justify-end">
+                        <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse-custom"
+                            style="animation-delay: 0.2s;">
                             2
                         </div>
                     </div>
-                    <div>
-                        <div class="bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center space-x-4 mb-4">
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-search text-purple-500 text-3xl"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white">Site Inspection</h3>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                After our initial consultation, we will book a site inspection to understand the job at hand.
-                            </p>
-                        </div>
-                    </div>
                 </div>
-                
+
                 <!-- Step 3 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center mb-16">
-                    <div class="md:text-right order-2 md:order-1">
-                        <div class="bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center justify-end space-x-4 mb-4">
-                                <h3 class="text-2xl font-bold text-white">Rebate | Pre-Approval</h3>
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-file-alt text-pink-500 text-3xl"></i>
-                                </div>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                On your behalf we send the applications to relevant authorities to get the required approvals in a timely manner.
-                            </p>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-blue-500 to-sky-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 3
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Rebate | Pre-Approval</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            On your behalf we send the applications to relevant authorities to get the required approvals in a timely manner.
+                        </p>
                     </div>
-                    <div class="order-1 md:order-2 flex justify-center md:justify-start">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                    <div class="flex justify-center md:justify-start">
+                        <div class="w-16 h-16 bg-sky-500 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse-custom"
+                            style="animation-delay: 0.4s;">
                             3
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Step 4 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center mb-16">
-                    <div class="flex justify-center md:justify-end">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:order-2 hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-sky-500 to-blue-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 4
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Book Installation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Once all the required approvals are received, we get in touch with you and will book a date and time of your convenience to start the installation.
+                        </p>
+                    </div>
+                    <div class="md:order-1 flex justify-center md:justify-end">
+                        <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse-custom"
+                            style="animation-delay: 0.6s;">
                             4
                         </div>
                     </div>
-                    <div>
-                        <div class="bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center space-x-4 mb-4">
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-calendar-check text-blue-500 text-3xl"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white">Book Installation</h3>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                Once all the required approvals are received, we get in touch with you and will book a date and time of your convenience to start the installation.
-                            </p>
-                        </div>
-                    </div>
                 </div>
-                
+
                 <!-- Step 5 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center mb-16">
-                    <div class="md:text-right order-2 md:order-1">
-                        <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center justify-end space-x-4 mb-4">
-                                <h3 class="text-2xl font-bold text-white">Communication</h3>
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-comments-dollar text-yellow-500 text-3xl"></i>
-                                </div>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                We are with you on every step of the way, and keep you informed of every progress.
-                            </p>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 5
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Communication</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We are with you on every step of the way, and keep you informed of every progress..
+                        </p>
                     </div>
-                    <div class="order-1 md:order-2 flex justify-center md:justify-start">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                    <div class="flex justify-center md:justify-start">
+                        <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-glow"
+                            style="animation-delay: 0.8s;">
                             5
                         </div>
                     </div>
                 </div>
-                
-                <!-- Step 6 -->
-                <div class="process-step grid md:grid-cols-2 gap-8 items-center">
-                    <div class="flex justify-center md:justify-end">
-                        <div class="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
-                            6
+
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="md:order-2 hidden-element">
+                        <div
+                            class="inline-block bg-gradient-to-r from-sky-500 to-blue-500 text-white px-6 py-3 rounded-full font-bold mb-4">
+                            Step 6
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Final Delivery</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Once the installation is complete and has been inspected, tested, and certified by the independent electrical safety inspectors. It's done, Congratulations!
+                        </p>
                     </div>
-                    <div>
-                        <div class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition transform hover:scale-105">
-                            <div class="flex items-center space-x-4 mb-4">
-                                <div class="bg-white rounded-full p-4">
-                                    <i class="fas fa-check-circle text-green-500 text-3xl"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white">Final Delivery</h3>
-                            </div>
-                            <p class="text-white leading-relaxed">
-                                Once the installation is complete and has been inspected, tested, and certified by the independent electrical safety inspectors. It's done, Congratulations!
-                            </p>
+                    <div class="md:order-1 flex justify-center md:justify-end">
+                        <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse-custom"
+                            style="animation-delay: 0.6s;">
+                            6
                         </div>
                     </div>
                 </div>
@@ -370,7 +357,7 @@
                 </div>
                 
                 <div class="relative">
-                    <div class="absolute inset-0 bg-gray-800 rounded-3xl transform rotate-3"></div>
+                    <div class="absolute inset-0 bg-[#FDE047] rounded-3xl transform rotate-3"></div>
                     <div class="relative bg-[#1A2259] rounded-3xl p-8 shadow-2xl">
                         <!-- <i class="fas fa-solar-panel text-purple-600 text-[200px] opacity-20"></i> -->
                          <img class="rounded-3xl" src="images/repair.jpg" alt="">
@@ -385,82 +372,206 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">Our Suppliers</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">JINKO</span>
+            <div class="grid grid-cols-2 md:grid-cols-7 gap-8">
+                <div class="w-36 h-20 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/jinko.png" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">GOODWE</span>
+                <div class="w-36 h-20 bg-white  rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/goodwe.png" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">SMA</span>
+                <div class="w-36 h-20 bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/sma.png" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">ENPHASE</span>
+                <div class="w-36 h-20 bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/sundrow.png" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">QCELLS</span>
+                <div class=" w-36 h-20 bg-white  rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/QCELLS_thumb.jpg" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">FRONIUS</span>
+                <div class="w-36 h-20 bg-white  rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/fronius.png" alt="" srcset="">
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">SOLAREDGE</span>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-gray-600">SUNDROW</span>
+                <!-- <div class=" w-36 h-20 bg-white  rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/solaredge.png" alt="" srcset="">
+                </div> -->
+                <div class=" w-36 h-20 bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex items-center justify-center">
+                    <img src="images/enphase.png" alt="" srcset="">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
+    <footer class="bg-[#1F2937] text-white">
+        <div class="container mx-auto px-4 py-12">
             <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Sun Commerce</h3>
-                    <p class="text-gray-400">Your trusted solar energy partner in Australia.</p>
+                <!-- Company Info -->
+                <div class="animate-fadeInUp">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-16 h-16  rounded-lg flex items-center justify-center">
+                            <img src="images/logo-4-2.png" class="rounded-2xl m-6" alt="" srcset="">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Sun Commerce</h3>
+                            <p class="text-sm text-gray-400">Solar Battery And Beyond</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We are one of the Australia's leading Solar retailers headquartered in Melbourne, Victoria.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Follow us:</h4>
+                        <div class="flex space-x-3">
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#residential" class="text-gray-400 hover:text-white transition">Residential</a></li>
-                        <li><a href="#commercial" class="text-gray-400 hover:text-white transition">Commercial</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+
+                <!-- Get in Touch -->
+                <div class="animate-fadeInUp delay-100">
+                    <h3 class="text-xl font-bold mb-6">Get in touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Unit 10/78, Willandra Drive,<br>
+                                    Epping, VIC - 3076
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@suncommerce.com.au" class="text-gray-300 hover:text-blue-400 transition">
+                                info@suncommerce.com.au
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+61404451977" class="text-gray-300 hover:text-blue-400 transition">
+                                +61 404 451 977
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fadeInUp delay-200">
+                    <h3 class="text-xl font-bold mb-6">Quick Link</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Residential.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Residential
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Commercial.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Commercial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Contact Us
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Solar Installation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Maintenance</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Consultation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Support</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Contact</h4>
-                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+61 404 451 977</p>
-                    <p class="text-gray-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Melbourne, Victoria</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-2xl"></i></a>
+
+                <!-- Working Hours -->
+                <div class="animate-fadeInUp delay-300">
+                    <h3 class="text-xl font-bold mb-6">Working hours</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Monday - Friday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 05:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Saturday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 02:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sunday</p>
+                                <p class="text-gray-400 text-sm">Closed</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.</p>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        &copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#1A2259] text-white p-4 rounded-2xl shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 hover:scale-110 z-50">
+    <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
         <i class="fas fa-arrow-up text-xl"></i>
+    </button> -->
+    <button class="scroll-to-top bg-[#1A2259]   fill-amber-50 size-8" id="backToTop" onclick="scrollToTop()">
+        <svg class="rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043"
+            enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+            <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+        </svg>
     </button>
 
     <script src="script/home.js"></script>

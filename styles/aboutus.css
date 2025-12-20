@@ -170,29 +170,26 @@ html {
 /* Back to Top Button */
 .scroll-to-top {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 9999px;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    /* background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(8, 23, 54, 0.4);
     transition: all 0.3s ease;
-    z-index: 50;
-    cursor: pointer;
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-    pointer-events: auto;
+    z-index: 1000;
 }
 
 .scroll-to-top:hover {
-    transform: scale(1.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(11, 30, 72, 0.6);
 }
 
 /* Fix for navbar logo spacing */
