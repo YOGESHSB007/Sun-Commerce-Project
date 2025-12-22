@@ -290,7 +290,7 @@ processSteps.forEach((step, index) => {
 });
 
 // Configuration
-const WHATSAPP_NUMBER = '918088744966'; // India country code + number
+const WHATSAPP_NUMBER = '610404451977'; // India country code + number
 const DEFAULT_MESSAGE = 'Hello! I am interested in solar energy solutions. Can you please help me?';
 
 // Elements
@@ -378,3 +378,35 @@ setTimeout(() => {
         notificationBadge.style.display = 'flex';
     }
 }, 3000);
+
+
+
+// Intersection Observer for scroll animations
+const observerOptions1 = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          observer1.unobserve(entry.target);
+      }
+  });
+}, observerOptions1);
+
+// Observe all animated elements
+document.querySelectorAll('.opacity-0').forEach(el => {
+  observer1.observe(el);
+});
+
+// Button interactions
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', function(e) {
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+          this.style.transform = '';
+      }, 150);
+  });
+});
