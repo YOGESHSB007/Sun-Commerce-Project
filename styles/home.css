@@ -361,27 +361,23 @@ body {
 }
 
 
-.process-timeline {
-    position: relative;
-}
+/* Process Timeline - Desktop Only */
+@media (min-width: 768px) {
+    .process-timeline {
+        position: relative;
+    }
 
-.process-timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
-    transform: translateX(-50%);
-}
-
-@media (max-width: 768px) {
     .process-timeline::before {
-        left: 20px;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+        transform: translateX(-50%);
     }
 }
-
 
 @keyframes slideInUp {
     from {
