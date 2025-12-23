@@ -116,3 +116,95 @@ backToTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+
+
+// Configuration
+const WHATSAPP_NUMBER = '610404451977'; // India country code + number
+const DEFAULT_MESSAGE = 'Hello! I am interested in solar energy solutions. Can you please help me?';
+
+// Elements
+const whatsappBtn = document.getElementById('whatsappBtn');
+const whatsappOverlay = document.getElementById('whatsappOverlay');
+const whatsappPopup = document.getElementById('whatsappPopup');
+const closePopup = document.getElementById('closePopup');
+const whatsappDMBtn = document.getElementById('whatsappDMBtn');
+const notificationBadge = document.getElementById('notificationBadge');
+const optionButtons = document.querySelectorAll('.option-btn');
+
+// Open popup
+whatsappBtn.addEventListener('click', () => {
+    whatsappOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    // Hide WhatsApp button and notification badge when popup is opened
+    whatsappBtn.style.display = 'none';
+    if (notificationBadge) {
+        notificationBadge.style.display = 'none';
+    }
+});
+
+// Close popup
+closePopup.addEventListener('click', closeWhatsAppPopup);
+
+// Close on overlay click
+whatsappOverlay.addEventListener('click', (e) => {
+    if (e.target === whatsappOverlay) {
+        closeWhatsAppPopup();
+    }
+});
+
+// Close popup function
+function closeWhatsAppPopup() {
+    whatsappOverlay.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    // Show WhatsApp button when popup is closed
+    whatsappBtn.style.display = 'flex';
+}
+
+// Direct to WhatsApp on button click
+whatsappDMBtn.addEventListener('click', () => {
+    openWhatsApp(DEFAULT_MESSAGE);
+});
+
+// Option buttons click
+optionButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        let message = '';
+        switch(index) {
+            case 0:
+                message = 'Hi! I am interested in solar solutions. Can you provide more information?';
+                break;
+            case 1:
+                message = 'Hello! I would like to know more about residential solar installation.';
+                break;
+            case 2:
+                message = 'Hi! I need information about commercial solar systems.';
+                break;
+            default:
+                message = DEFAULT_MESSAGE;
+        }
+        openWhatsApp(message);
+    });
+});
+
+// Open WhatsApp function
+function openWhatsApp(message) {
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+    closeWhatsAppPopup();
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !whatsappOverlay.classList.contains('hidden')) {
+        closeWhatsAppPopup();
+    }
+});
+
+// Optional: Show notification badge after some time
+setTimeout(() => {
+    if (notificationBadge) {
+        notificationBadge.style.display = 'flex';
+    }
+}, 3000);
