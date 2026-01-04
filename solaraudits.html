@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Audits & Upgrades - Sun Commerce</title>
+    <link href="styles/audits.css" rel="stylesheet">
+  <link href="styles/output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body class="bg-white">
+    <nav id="navbar"
+        class="navbar-dark shadow-lg bg-[#1A2259] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center flex-col ">
+                    <div class="flex justify-center items-center ">
+                        <a href="index.html" class="w-14 pr-1  text-blue-600 "><img src="images/logo ttoopp.png" alt="logo"> </a>
+                        <a href="index.html" class="w-24  text-blue-600 "><img src="images/logo ddoodo.png" alt="logos"> </a>
+                    </div>
+                    <span class="text-xs text-opacity-20 font-thin text-white">SOLAR BATTERY AND BEYOND</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-center space-x-8 items-center">
+                    <a href="index.html" class="text-white hover:text-green-400 transition font-medium">Home</a>
+                    <a href="Residential.html"
+                        class="text-white hover:text-green-400 transition font-medium">Residential</a>
+                    <a href="Commercial.html"
+                        class="text-white hover:text-green-400 transition font-medium">Commercial</a>
+                    <a href="aboutus.html" class="text-green-400 hover:text-green-400 transition font-medium">About Us</a>
+                    
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
+
+                </div>
+                <div class="hidden md:flex">
+                    <button  onclick="window.location.href='contact.html'"
+                    class="bg-green-500   text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                    <span>Request a quote</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-white hover:text-green-400">Home</a>
+                <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+                
+                <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+                <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
+                <button onclick="window.location.href='contact.html'" class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                    Request a quote
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb Section -->
+    <section class="hero-section py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="" >
+                <img src="images/bg-1.jpg" alt="">
+            </div>
+            <!-- <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div> -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold pt-20 text-white mb-4">About Us</h1>
+                <div class="flex items-center justify-center text-xl space-x-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home /</a>
+                    
+                    <span class="text-green-400">About Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    
+
+    <!-- Why Choose Us Cards -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-[#1A2259] mb-4 opacity-0 animate-fadeInUp">
+                Why Choose Our Solar Audit & Upgrade Services?
+            </h2>
+            <div class="w-24 h-1 bg-yellow-500 mx-auto mb-16 opacity-0 animate-fadeIn delay-200"></div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover text-center opacity-0 animate-scaleIn delay-100">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-check text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1A2259] mb-3">Expert Installation</h3>
+                    <p class="text-gray-600">Certified professionals with years of experience</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover text-center opacity-0 animate-scaleIn delay-200">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1A2259] mb-3">Exceptional Support</h3>
+                    <p class="text-gray-600">24/7 customer care and assistance</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover text-center opacity-0 animate-scaleIn delay-300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1A2259] mb-3">Trusted Technology</h3>
+                    <p class="text-gray-600">Leading brands and proven systems</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover text-center opacity-0 animate-scaleIn delay-400">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-search-location text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1A2259] mb-3">Personal Inspection</h3>
+                    <p class="text-gray-600">Every site thoroughly evaluated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <!-- Left Image -->
+                <div class="relative opacity-0 animate-slideInLeft">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#1A2259] to-blue-900 rounded-3xl transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800" alt="Solar Audit" class="relative rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl animate-float">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-green-500">10+</p>
+                            <p class="text-sm text-gray-600">Years Outlook</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="opacity-0 animate-slideInRight delay-200">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1A2259] mb-6">
+                        Stay Future-Ready with Regular System Reviews
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        The renewable energy industry evolves rapidly, with new innovations emerging every year. Most solar and battery systems are installed with a long-term outlook of 10 years or more. Without regular reviews, you could miss out on upgrades that improve efficiency, lower energy costs, or unlock new savings opportunities.
+                    </p>
+                    <!-- <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Our comprehensive solar audit service ensures your system continues to meet your energy needs. We evaluate your current setup, consumption patterns, and future plans, then recommend upgrades where they make financial and practical sense.
+                    </p> -->
+
+                    <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 border-l-4 border-green-500">
+                        <h3 class="text-xl font-bold text-[#1A2259] mb-4">This may include:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 check-icon"></i>
+                                <span class="text-gray-700">Adding battery storage to an existing solar system</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 check-icon"></i>
+                                <span class="text-gray-700">Expanding panel capacity for higher energy generation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 check-icon"></i>
+                                <span class="text-gray-700">Optimising inverter performance through firmware upgrades</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 check-icon"></i>
+                                <span class="text-gray-700">Improving system efficiency with newer technologies</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="text-lg text-gray-700 mt-6 font-semibold">
+                        Everything we do is tailored to your goals—maximising savings, reliability, and energy independence.
+                    </p>
+
+                    <button onclick="window.location.href='contact.html'" class="mt-8 bg-[#1A2259] hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 inline-flex items-center gap-3">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>BOOK A FREE SITE INSPECTION</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Residential -->
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover opacity-0 animate-fadeInUp">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800" alt="Residential" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A2259] to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-home text-[#1A2259] text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-[#1A2259] mb-4">Residential Solar Audits & Upgrades</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Ensure your home solar system is performing at its best. We assess system capacity, efficiency, and compatibility with modern advancements, including battery storage additions to solar-only systems.
+                        </p>
+                        <button onclick="window.location.href='contact.html'" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                            <i class="fas fa-tools"></i>
+                            <span>BOOK A MAINTENANCE APPOINTMENT</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Commercial -->
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover opacity-0 animate-fadeInUp delay-200">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Commercial" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A2259] to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <div class="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-building text-[#1A2259] text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-[#1A2259] mb-4">Commercial Solar Audits & Upgrades</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Future-proof your business with a solar system designed for growth and sustainability. Our in-depth cost-benefit analysis helps you understand the financial impact of upgrades while aligning with long-term energy.
+                        </p>
+                        <!-- <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                            <p class="font-semibold text-[#1A2259] mb-2">Additional opportunities:</p>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-charging-station text-green-500"></i>
+                                    <span>EV charger installations</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-dollar-sign text-green-500"></i>
+                                    <span>Paid EV charging services</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-chart-line text-green-500"></i>
+                                    <span>Energy optimisation for peak hours</span>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <button onclick="window.location.href='contact.html'" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                            <i class="fas fa-tools"></i>
+                            <span>BOOK A MAINTENANCE APPOINTMENT</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 opacity-0 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">How Our Process Works</h2>
+                <p class="text-xl text-gray-200">Simple, transparent, and effective</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center opacity-0 animate-fadeInUp delay-100">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center mx-auto animate-pulse-glow">
+                            <span class="text-[#1A2259] text-3xl font-bold">1</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-pie text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Energy Assessment</h3>
+                    <p class="text-gray-200">Our specialists analyse your current electricity usage and the future requirements.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center opacity-0 animate-fadeInUp delay-200">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-lime-600 rounded-full flex items-center justify-center mx-auto animate-pulse-glow">
+                            <span class="text-[#1A2259] text-3xl font-bold">2</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Recommendations</h3>
+                    <p class="text-gray-200">We design customised upgrade options, including eligibility for rebates and incentives.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center opacity-0 animate-fadeInUp delay-300">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-blue-400 rounded-full flex items-center justify-center mx-auto animate-pulse-glow delay-300">
+                            <span class="text-[#1A2259] text-3xl font-bold">3</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-clipboard-check text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Site Verification</h3>
+                    <p class="text-gray-200">Qualified electricians visit your property to confirm system design and installation readiness.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center opacity-0 animate-fadeInUp delay-400">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-purple-400 rounded-full flex items-center justify-center mx-auto animate-pulse-glow delay-400">
+                            <span class="text-[#1A2259] text-3xl font-bold">4</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check-double text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Installation & Support</h3>
+                    <p class="text-gray-200">Once approved, we complete the installation with precision and guide you on maximising system performance.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 opacity-0 animate-fadeInUp delay-500">
+                <button onclick="window.location.href='contact.html'" class="bg-white text-[#1A2259] font-bold py-4 px-14 rounded-full text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 inline-flex items-center gap-3">
+                    <i class="fas fa-wrench"></i>
+                    <span class=" ">BOOK A MAINTENANCE APPOINTMENT</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 opacity-0 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-4">Why Work With Us?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We deliver industry-leading quality, expertise, and customer care across solar, battery storage, and EV charging solutions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-100">
+                    <i class="fas fa-certificate text-green-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Fully accredited and licensed Master Electricians</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-200">
+                    <i class="fas fa-star text-blue-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Outstanding workmanship and customer service</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-300">
+                    <i class="fas fa-file-invoice-dollar text-yellow-600 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Detailed energy usage analysis based on your bills</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-400">
+                    <i class="fas fa-hard-hat text-purple-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">On-site inspection by experienced professionals</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-500">
+                    <i class="fas fa-cogs text-pink-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Custom, obligation-free solutions tailored to you</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-600">
+                    <i class="fas fa-hand-holding-usd text-indigo-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Support with government rebates and incentives</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-700">
+                    <i class="fas fa-gem text-teal-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">High-quality, proven components</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 opacity-0 animate-fadeInUp delay-800">
+                    <i class="fas fa-headphones-alt text-orange-500 text-4xl mb-4"></i>
+                    <p class="text-gray-800 font-semibold">Ongoing guidance and after-installation support</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 opacity-0 animate-fadeInUp delay-800">
+                <button onclick="window.location.href='contact.html'" class="bg-green-500 hover:bg-green-600 text-white font-bold  px-10 py-5 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-flex items-center gap-3">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>BOOK A FREE SITE INSPECTION</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="opacity-0 animate-fadeInUp">
+                <i class="fas fa-bolt text-yellow-400 text-6xl mb-6 animate-float"></i>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Lower Your Energy Bills?</h2>
+                <p class="text-xl text-gray-200 mb-10 leading-relaxed">
+                    Take control of your energy costs and future-proof your property with solar and battery solutions that work smarter.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="window.location.href='contact.html'" class="bg-yellow-400 hover:bg-yellow-500 text-[#1A2259] font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-3">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>CONTACT US TODAY</span>
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-[#1A2259] font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-3">
+                        <i class="fas fa-phone"></i>
+                        <span>Call: +61 404 451 977</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-[#1F2937] text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate-fadeInUp">
+                    <div class="flex items-center space-x-6 mr-6 mb-6">
+                        <div class="w-40 h-40  rounded-lg flex items-center justify-center">
+                            <img src="images/logo-4-2.png" class="rounded-2xl m-6" alt="" srcset="">
+                        </div>
+                        <!-- <div class="flex">
+                            <h3 class="text-xl font-bold">Sun Commerce</h3>
+                            <p class="text-sm text-gray-400">Solar Battery And Beyond</p>
+                        </div> -->
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We are one of the Australia's leading Solar retailers headquartered in Melbourne, Victoria.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Follow us:</h4>
+                        <div class="flex space-x-3">
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div class="animate-fadeInUp delay-100">
+                    <h3 class="text-xl font-bold mb-6">Get in touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Unit 10/78, Willandra Drive,<br>
+                                    Epping, VIC - 3076
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@suncommerce.com.au" class="text-gray-300 hover:text-blue-400 transition">
+                                info@suncommerce.com.au
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+61404451977" class="text-gray-300 hover:text-blue-400 transition">
+                                +61 404 451 977
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fadeInUp delay-200">
+                    <h3 class="text-xl font-bold mb-6">Quick Link</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Residential.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Residential
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Commercial.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Commercial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="animate-fadeInUp delay-300">
+                    <h3 class="text-xl font-bold mb-6">Working hours</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Monday - Friday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 05:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Saturday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 02:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sunday</p>
+                                <p class="text-gray-400 text-sm">Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        &copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button> -->
+    <button class="scroll-to-top bg-[#1A2259]   fill-amber-50 size-8" id="backToTop" onclick="scrollToTop()">
+        <svg class="rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043"
+            enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+            <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+        </svg>
+    </button>
+    <script src="script/audits.js"></script>
+
+</body>
+</html>
