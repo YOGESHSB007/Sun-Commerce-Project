@@ -1,16 +1,34 @@
-// Mobile Menu Toggle
-const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+// // Mobile Menu Toggle
+// const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+// const mobileMenu = document.getElementById("mobile-menu");
 
-mobileMenuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+// mobileMenuBtn.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("hidden");
+// });
+
+// // Close mobile menu when clicking on a link
+// const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+// mobileMenuLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     mobileMenu.classList.add("hidden");
+//   });
+// });
+
+
+ // Mobile menu toggle
+ document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.toggle('hidden');
 });
 
-// Close mobile menu when clicking on a link
-const mobileMenuLinks = mobileMenu.querySelectorAll("a");
-mobileMenuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.add("hidden");
+// Mobile dropdown functionality
+document.querySelectorAll('.mobile-dropdown-btn').forEach(button => {
+  button.addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const svg = this.querySelector('svg');
+      
+      content.classList.toggle('hidden');
+      svg.classList.toggle('rotate-180');
   });
 });
 

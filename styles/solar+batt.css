@@ -204,3 +204,14 @@
     background: linear-gradient(to top, #22c55e, #86efac);
     transition: height 0.3s ease;
 }
+
+
+.hero-section {
+    background: linear-gradient(90deg, rgba(15, 32, 60, 0.85) 0%, rgba(30, 41, 59, 0.4) 100%), 
+                url('../images/solar_panel_banner.webp') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    min-height: 50vh;
+}
