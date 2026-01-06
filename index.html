@@ -195,6 +195,7 @@
                 <div class="mobile-dropdown-content hidden pl-4">
                     <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
                     <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                    <a href="#Storage" class="block py-2 text-white hover:text-green-400">Storage</a>
                 </div>
             </div>
 
@@ -587,7 +588,7 @@
                     <!-- Battery Image Container -->
                     <div class="relative">
                         <!-- Decorative Background -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-[#1A2259] to-blue-900 rounded-3xl transform rotate-3"></div>
+                        <!-- <div class="absolute inset-0 bg-gradient-to-br from-[#1A2259] to-blue-900 rounded-3xl transform rotate-3"></div> -->
                         
                         <!-- Main Image -->
                         <div class="relative bg-gray-100 rounded-3xl overflow-hidden shadow-2xl">
@@ -596,29 +597,30 @@
                                  class="w-full h-96 object-cover">
                             
                             <!-- Floating Stats Card -->
-                            <div class="absolute bottom-6 left-6 right-1 m-4 bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl animate-float">
-                                <div class="flex items-center justify-between mb-3">
-                                    <span class="text-gray-700 font-semibold">Battery Status</span>
-                                    <span class="text-green-500 font-bold flex items-center">
-                                        <i class="fas fa-bolt mr-2"></i>95% Charged
-                                    </span>
+                            
+                        </div>
+                        <div class=" bottom-6 left-6 right-1 m-4 bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl animate-float">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-gray-700 font-semibold">Battery Status</span>
+                                <span class="text-green-500 font-bold flex items-center">
+                                    <i class="fas fa-bolt mr-2"></i>95% Charged
+                                </span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="charging-bar h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full"></div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                                <div>
+                                    <p class="text-2xl font-bold text-[#1A2259]">13.5</p>
+                                    <p class="text-xs text-gray-600">kWh Capacity</p>
                                 </div>
-                                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                                    <div class="charging-bar h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full"></div>
+                                <div>
+                                    <p class="text-2xl font-bold text-green-500">10+</p>
+                                    <p class="text-xs text-gray-600">Years Life</p>
                                 </div>
-                                <div class="grid grid-cols-3 gap-4 mt-4 text-center">
-                                    <div>
-                                        <p class="text-2xl font-bold text-[#1A2259]">13.5</p>
-                                        <p class="text-xs text-gray-600">kWh Capacity</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-2xl font-bold text-green-500">10+</p>
-                                        <p class="text-xs text-gray-600">Years Life</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-2xl font-bold text-blue-500">24/7</p>
-                                        <p class="text-xs text-gray-600">Power</p>
-                                    </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-blue-500">24/7</p>
+                                    <p class="text-xs text-gray-600">Power</p>
                                 </div>
                             </div>
                         </div>

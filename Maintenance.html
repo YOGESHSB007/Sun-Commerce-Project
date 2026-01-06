@@ -12,6 +12,135 @@
 </head>
 <body class="bg-white">
 
+    <nav id="navbar"
+    class="navbar-dark shadow-lg bg-[#1A2259] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-3">
+            <!-- Logo -->
+            <div class="flex items-center flex-col">
+                <div class="flex justify-center items-center">
+                    <a href="index.html" class="w-14 pr-1 text-blue-600"><img src="images/logo ttoopp.png" alt="logo"></a>
+                    <a href="index.html" class="w-24 text-blue-600"><img src="images/logo ddoodo.png" alt="logos"></a>
+                </div>
+                <span class="text-xs  font-thin text-white">SOLAR BATTERY AND BEYOND</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex justify-center space-x-8 items-center">
+                <!-- Solutions Dropdown -->
+                <div class="relative group">
+                    <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                        Solutions
+                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="Residential.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Residential</a>
+                        <a href="Commercial.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Commercial</a>
+                        <a href="index.html#Storage" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Storage</a>
+                    </div>
+                </div>
+
+                <!-- Services Dropdown -->
+                <div class="relative group">
+                    <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                        Services
+                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="battary+solar.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar + battery installations</a>
+                        <a href="Ev.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">EV chargers</a>
+                        <a href="Maintenance.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Maintenance</a>
+                        <a href="solaraudits.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar audits</a>
+                    </div>
+                </div>
+
+                <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
+                <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
+            </div>
+
+            <div class="hidden md:flex">
+                <button onclick="window.location.href='contact.html#contactForm'"
+                    class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                    <span>Free Quote Today</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <!-- Solutions Mobile Dropdown -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                    <span>Solutions</span>
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="mobile-dropdown-content hidden pl-4">
+                    <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                    <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                    <a href="index.html#Storage" class="block py-2 text-white hover:text-green-400">Storage</a>
+                </div>
+            </div>
+
+            <!-- Services Mobile Dropdown -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                    <span>Services</span>
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="mobile-dropdown-content hidden pl-4">
+                    <a href="battary+solar.html" class="block py-2 text-white hover:text-green-400">Solar + battery installations</a>
+                    <a href="Ev.html" class="block py-2 text-white hover:text-green-400">EV chargers</a>
+                    <a href="Maintenance.html" class="block py-2 text-white hover:text-green-400">Maintenance</a>
+                    <a href="solaraudits.html" class="block py-2 text-white hover:text-green-400">Solar audits</a>
+                </div>
+            </div>
+
+            <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+            <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+            <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
+            <button onclick="window.location.href='contact.html#contactForm'"
+                class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                Free Quote Today
+            </button>
+        </div>
+    </div>
+    </nav>
+
+
+
+    <section class="hero-section py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="">
+                <!-- <img src="images/bg-1.jpg" alt=""> -->
+            </div>
+            <!-- <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div> -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold pt-20 text-white mb-4">Solar Maintenance</h1>
+                <div class="flex items-center justify-center text-xl space-x-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home /</a>
+
+                    <span class="text-green-400">Solar Maintenance</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Stay Ahead Section -->
     <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="container mx-auto px-4">
@@ -210,7 +339,7 @@
                                 Ideal for residential & commercial
                             </li>
                         </ul>
-                        <button class="bg-white text-[#1A2259] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition w-full">
+                        <button onclick="window.location.href='contact.html#contactForm'" class="bg-white text-[#1A2259] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition w-full">
                             Book Maintenance
                         </button>
                     </div>
@@ -251,7 +380,7 @@
                                 Storm & accident support
                             </li>
                         </ul>
-                        <button class="bg-white text-[#1A2259] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition w-full">
+                        <button onclick="window.location.href='contact.html#contactForm'" class="bg-white text-[#1A2259] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition w-full">
                             Request Service
                         </button>
                     </div>
@@ -411,11 +540,11 @@
                 <p class="text-xl text-blue-100 mb-8">
                     Don't let minor issues turn into costly repairs. Schedule your maintenance service today and keep your system performing at its best.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-white text-[#1A2259] px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition text-lg shadow-xl">
+                <div  class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="window.location.href='contact.html#contactForm'" class="bg-white text-[#1A2259] px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition text-lg shadow-xl">
                         Book Free Site Inspection
                     </button>
-                    <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#1A2259] transition text-lg">
+                    <button onclick="window.location.href='contact.html#contactForm'" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#1A2259] transition text-lg">
                         Schedule Maintenance
                     </button>
                 </div>

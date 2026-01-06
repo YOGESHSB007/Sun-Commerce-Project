@@ -116,3 +116,47 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(11, 30, 72, 0.6);
 }
+
+.hero-section {
+    background: linear-gradient(90deg, rgba(15, 32, 60, 0.85) 0%, rgba(30, 41, 59, 0.4) 100%), 
+                url('../images/bg-3.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    min-height: 50vh;
+}
+
+
+.footer-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3B82F6;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #3B82F6;
+}
+
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+}
