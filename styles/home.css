@@ -786,3 +786,36 @@ body {
         padding: 1rem 0;
     }
 }
+
+
+.service-card-item {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.service-card-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.service-card-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.service-card-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

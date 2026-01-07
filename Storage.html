@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Storage Solutions - Sun Commerce</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./styles/Storage.css" rel="stylesheet">
+    <link href="./styles/output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+
+    <nav id="navbar"
+        class="navbar-dark shadow-lg bg-[#1A2259] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center flex-col">
+                    <div class="flex justify-center items-center">
+                        <a href="index.html" class="w-14 pr-1 text-blue-600"><img src="images/logo ttoopp.png"
+                                alt="logo"></a>
+                        <a href="index.html" class="w-24 text-blue-600"><img src="images/logo ddoodo.png"
+                                alt="logos"></a>
+                    </div>
+                    <span class="text-xs  font-thin text-white">SOLAR BATTERY AND BEYOND</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-center space-x-8 items-center">
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                            Solutions
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="Residential.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Residential</a>
+                            <a href="Commercial.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Commercial</a>
+                            <a href="Storage.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Storage</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="battary+solar.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar
+                                + battery installations</a>
+                            <a href="Ev.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">EV
+                                chargers</a>
+                            <a href="Maintenance.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Maintenance</a>
+                            <a href="solaraudits.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar
+                                audits</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <button onclick="window.location.href='contact.html#contactForm'"
+                        class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                        <span>Free Quote Today</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                        <span>Solutions</span>
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4">
+                        <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                        <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                        <a href="Storage.html" class="block py-2 text-white hover:text-green-400">Storage</a>
+                    </div>
+                </div>
+
+                <!-- Services Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                        <span>Services</span>
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4">
+                        <a href="battary+solar.html" class="block py-2 text-white hover:text-green-400">Solar + battery
+                            installations</a>
+                        <a href="Ev.html" class="block py-2 text-white hover:text-green-400">EV chargers</a>
+                        <a href="Maintenance.html" class="block py-2 text-white hover:text-green-400">Maintenance</a>
+                        <a href="solaraudits.html" class="block py-2 text-white hover:text-green-400">Solar audits</a>
+                    </div>
+                </div>
+
+                <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+                <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+                <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
+                <button onclick="window.location.href='contact.html#contactForm'"
+                    class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                    Free Quote Today
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb Section -->
+    <section class="hero-section py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="">
+                <!-- <img src="images/bg-1.jpg" alt=""> -->
+            </div>
+            <!-- <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div> -->
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-6xl font-bold pt-20 text-white mb-4">Storage</h1>
+                <div class="flex items-center justify-center text-xl space-x-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white transition">Home /</a>
+
+                    <span class="text-green-400">Storage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battery Storage Solutions Section -->
+    <section id="Storage" class="py-20 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 opacity-0 animate-fadeInUp">
+                <div class="inline-block bg-[#1A2259] text-yellow-400 px-6 py-2 rounded-full font-semibold mb-4">
+                    <i class="fas fa-battery-full mr-2"></i>
+                    Energy Storage Solutions
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-6">
+                    Power Your Home 24/7 with <span class="text-green-500">Battery Storage</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Store excess solar energy during the day and use it at night or during power outages. Achieve true
+                    energy independence with Sun Commerce's advanced battery storage solutions.
+                </p>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+
+                <!-- Left Side - Image & Stats -->
+                <div class="relative opacity-0 animate-slideInLeft delay-200">
+                    <!-- Battery Image Container -->
+                    <div class="relative">
+                        <!-- Decorative Background -->
+                        <!-- <div class="absolute inset-0 bg-gradient-to-br from-[#1A2259] to-blue-900 rounded-3xl transform rotate-3"></div> -->
+
+                        <!-- Main Image -->
+                        <div class="relative bg-gray-100 rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="images/ppremium_photo-1716824502431-b93e3756a6aa.avif"
+                                alt="Battery Storage System" class="w-full h-96 object-cover">
+
+                            <!-- Floating Stats Card -->
+
+                        </div>
+                        <div
+                            class=" bottom-6 left-6 right-1 m-4 bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl animate-float">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-gray-700 font-semibold">Battery Status</span>
+                                <span class="text-green-500 font-bold flex items-center">
+                                    <i class="fas fa-bolt mr-2"></i>95% Charged
+                                </span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div
+                                    class="charging-bar h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                                <div>
+                                    <p class="text-2xl font-bold text-[#1A2259]">13.5</p>
+                                    <p class="text-xs text-gray-600">kWh Capacity</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-green-500">10+</p>
+                                    <p class="text-xs text-gray-600">Years Life</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-blue-500">24/7</p>
+                                    <p class="text-xs text-gray-600">Power</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Benefits List -->
+                <div class="space-y-6 opacity-0 animate-slideInRight delay-300">
+                    <h3 class="text-3xl font-bold text-[#1A2259] mb-8">Why Choose Battery Storage?</h3>
+
+                    <!-- Benefit 1 -->
+                    <div class="flex gap-4 battery-card bg-gray-50 p-6 rounded-2xl">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center icon-bounce">
+                            <i class="fas fa-sun text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#1A2259] mb-2">Maximize Solar Savings</h4>
+                            <p class="text-gray-600">Store excess solar energy generated during the day and use it when
+                                electricity rates are highest, reducing your bills by up to 90%.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="flex gap-4 battery-card bg-gray-50 p-6 rounded-2xl">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center icon-bounce">
+                            <i class="fas fa-shield-alt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#1A2259] mb-2">Backup Power Protection</h4>
+                            <p class="text-gray-600">Keep your lights on during grid outages. Our battery systems
+                                provide seamless backup power to keep your home running.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="flex gap-4 battery-card bg-gray-50 p-6 rounded-2xl">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center icon-bounce">
+                            <i class="fas fa-leaf text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#1A2259] mb-2">Environmental Impact</h4>
+                            <p class="text-gray-600">Reduce your carbon footprint and reliance on fossil fuels. Store
+                                clean energy and use it when you need it most.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="flex gap-4 battery-card bg-gray-50 p-6 rounded-2xl">
+                        <div
+                            class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center icon-bounce">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#1A2259] mb-2">Smart Energy Management</h4>
+                            <p class="text-gray-600">Monitor and control your energy usage from anywhere with our
+                                advanced mobile app. Optimize your consumption in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Battery Brands Section -->
+            <!-- <div class="bg-gradient-to-br from-[#1A2259] to-blue-900 rounded-3xl p-12 shadow-2xl opacity-0 animate-fadeInUp delay-400">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Premium Battery Brands We Offer</h3>
+                    <p class="text-gray-300 text-lg">We partner with the world's leading battery manufacturers</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    
+                    <div class="bg-white rounded-2xl p-8 text-center battery-card group">
+                        <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                            <i class="fas fa-bolt text-white text-4xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-[#1A2259] mb-3">Tesla Powerwall</h4>
+                        <p class="text-gray-600 mb-4">13.5 kWh capacity with seamless backup power and smart energy management.</p>
+                        <ul class="text-left text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>10-year warranty</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Scalable system</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Weather resistant</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 text-center battery-card group">
+                        <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                            <i class="fas fa-battery-full text-white text-4xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-[#1A2259] mb-3">LG Chem RESU</h4>
+                        <p class="text-gray-600 mb-4">Compact design with high energy density and exceptional reliability.</p>
+                        <ul class="text-left text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>10-year warranty</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Compact design</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>High efficiency</li>
+                        </ul>
+                    </div>
+
+                   
+                    <div class="bg-white rounded-2xl p-8 text-center battery-card group">
+                        <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                            <i class="fas fa-charging-station text-white text-4xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-[#1A2259] mb-3">Sonnen Battery</h4>
+                        <p class="text-gray-600 mb-4">German engineering with intelligent energy management and long lifespan.</p>
+                        <ul class="text-left text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>10+ year warranty</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Smart integration</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Premium quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- How It Works Section -->
+            <!-- <div class="mt-20 opacity-0 animate-fadeInUp delay-500">
+                <h3 class="text-3xl md:text-4xl font-bold text-[#1A2259] text-center mb-12">How Battery Storage Works</h3>
+                
+                <div class="grid md:grid-cols-4 gap-8">
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-solar-panel text-5xl text-yellow-500"></i>
+                        </div>
+                        <h4 class="font-bold text-[#1A2259] mb-2">Solar Generation</h4>
+                        <p class="text-gray-600 text-sm">Your solar panels generate electricity from sunlight during the day.</p>
+                    </div>
+
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow delay-200">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-download text-5xl text-green-500"></i>
+                        </div>
+                        <h4 class="font-bold text-[#1A2259] mb-2">Energy Storage</h4>
+                        <p class="text-gray-600 text-sm">Excess energy is stored in your battery system for later use.</p>
+                    </div>
+
+                   
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow delay-300">
+                            <span class="text-white text-2xl font-bold">3</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-moon text-5xl text-blue-500"></i>
+                        </div>
+                        <h4 class="font-bold text-[#1A2259] mb-2">Night Usage</h4>
+                        <p class="text-gray-600 text-sm">Use stored energy at night or during peak hours when rates are high.</p>
+                    </div>
+
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow delay-400">
+                            <span class="text-white text-2xl font-bold">4</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-plug text-5xl text-purple-500"></i>
+                        </div>
+                        <h4 class="font-bold text-[#1A2259] mb-2">Backup Power</h4>
+                        <p class="text-gray-600 text-sm">Automatic backup during outages keeps your home powered 24/7.</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- CTA Section -->
+            <!-- <div class="mt-20 text-center opacity-0 animate-fadeInUp delay-600">
+                <div class="bg-gradient-to-r from-green-400 to-green-600 rounded-3xl p-12 shadow-2xl">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Ready to Store Your Solar Power?
+                    </h3>
+                    <p class="text-white text-lg mb-8 max-w-2xl mx-auto">
+                        Get a free consultation and discover how much you can save with battery storage. Our experts will design the perfect system for your home.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="window.location.href='contact.html'" 
+                                class="bg-white text-green-600 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                            <i class="fas fa-calculator"></i>
+                            <span>Get Free Quote</span>
+                        </button>
+                        <button class="bg-[#1A2259] text-white font-bold py-4 px-8 rounded-full hover:bg-blue-900 transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Us: +61 404 451 977</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+                        Experience reliable energy with advanced battery solutions.
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Store excess solar energy and use it whenever you need—day or night. Our advanced battery
+                        storage solutions ensure uninterrupted power, lower electricity bills, and greater energy
+                        independence for your home or business.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center transform hover:scale-110 transition">
+                            <div
+                                class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-sun text-white text-4xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">Abundant</h3>
+                        </div>
+                        <div class="text-center transform hover:scale-110 transition">
+                            <div
+                                class="bg-gradient-to-br from-blue-400 to-purple-500 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-hand-holding-heart text-white text-4xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">Accessible</h3>
+                        </div>
+                        <div class="text-center transform hover:scale-110 transition">
+                            <div
+                                class="bg-gradient-to-br from-green-400 to-teal-500 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-dollar-sign text-white text-4xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">Affordable</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-[#FDE047] rounded-3xl transform rotate-3"></div>
+                    <div class="relative bg-[#1A2259] rounded-3xl p-8 shadow-2xl">
+                        <!-- <i class="fas fa-solar-panel text-purple-600 text-[200px] opacity-20"></i> -->
+                        <img class="rounded-3xl" src="images/premium_photo-1716824502803-aa4ca01fa417.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process Timeline -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 opacity-0 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-6">
+                    Simple Installation Process
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From consultation to activation, we make battery storage installation seamless and hassle-free.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div
+                    class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-green-400 to-blue-500 transform -translate-x-1/2">
+                </div>
+
+                <div class="space-y-12">
+
+                    <!-- Step 1 -->
+                    <div class="relative opacity-0 animate-fadeInUp delay-100">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 text-right">
+                                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">1. Free Consultation</h3>
+                                    <p class="text-gray-700">
+                                        Our solar experts assess your energy needs, review your current bills, and
+                                        recommend the perfect battery solution for your home or business.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="md:w-12 flex justify-center">
+                                <div
+                                    class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-xl animate-pulse-glow z-10">
+                                    <i class="fas fa-comments text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative opacity-0 animate-fadeInUp delay-200">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="md:w-12 flex justify-center">
+                                <div
+                                    class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-xl animate-pulse-glow delay-200 z-10">
+                                    <i class="fas fa-home text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">2. Site Inspection</h3>
+                                    <p class="text-gray-700">
+                                        Our licensed electricians visit your property to assess the installation
+                                        location, electrical setup, and confirm system specifications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative opacity-0 animate-fadeInUp delay-300">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 text-right">
+                                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">3. Custom Design & Approval</h3>
+                                    <p class="text-gray-700">
+                                        We create a detailed system design, handle all permits and approvals, and secure
+                                        available rebates and incentives on your behalf.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="md:w-12 flex justify-center">
+                                <div
+                                    class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center shadow-xl animate-pulse-glow delay-300 z-10">
+                                    <i class="fas fa-clipboard-check text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative opacity-0 animate-fadeInUp delay-400">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="md:w-12 flex justify-center">
+                                <div
+                                    class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center shadow-xl animate-pulse-glow delay-400 z-10">
+                                    <i class="fas fa-tools text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">4. Professional Installation</h3>
+                                    <p class="text-gray-700">
+                                        Our certified team installs your battery system with precision, typically
+                                        completing residential installations in just 1-2 days.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative opacity-0 animate-fadeInUp delay-500">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 text-right">
+                                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover">
+                                    <h3 class="text-2xl font-bold text-[#1A2259] mb-3">5. Activation & Training</h3>
+                                    <p class="text-gray-700">
+                                        We activate your system, configure the mobile app, and provide comprehensive
+                                        training so you can maximize your energy savings from day one.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="md:w-12 flex justify-center">
+                                <div
+                                    class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-xl animate-pulse-glow delay-500 z-10">
+                                    <i class="fas fa-check-double text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center mt-16 opacity-0 animate-fadeInUp delay-600">
+                <p class="text-lg text-gray-600 mb-6">Ready to get started?</p>
+                <button onclick="window.location.href='contact.html'"
+                    class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-12 rounded-full text-xl transition transform hover:scale-105 shadow-2xl inline-flex items-center gap-3">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Schedule Free Consultation</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white relative overflow-hidden">
+        <div
+            class="absolute top-20 left-10 w-96 h-96 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float">
+        </div>
+        <div
+            class="absolute bottom-20 right-10 w-96 h-96 bg-green-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float delay-500">
+        </div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="opacity-0 animate-fadeInUp">
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="w-32 h-32 bg-yellow-400 rounded-full flex items-center justify-center shadow-2xl animate-float">
+                        <i class="fas fa-battery-full text-[#1A2259] text-6xl"></i>
+                    </div>
+                </div>
+
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Power Your Future with Battery Storage
+                </h2>
+
+                <p class="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto">
+                    Join thousands of Australian homes and businesses already enjoying energy independence, lower bills,
+                    and reliable backup power.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                    <button onclick="window.location.href='contact.html'"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-[#1A2259] font-bold py-5 px-12 rounded-full text-xl transition transform hover:scale-105 shadow-2xl inline-flex items-center justify-center gap-3">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Get Free Quote</span>
+                    </button>
+                    <button
+                        class="bg-white hover:bg-gray-100 text-[#1A2259] font-bold py-5 px-12 rounded-full text-xl transition transform hover:scale-105 shadow-2xl inline-flex items-center justify-center gap-3">
+                        <i class="fas fa-phone"></i>
+                        <span>Call +61 404 451 977</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <p class="text-5xl font-bold text-yellow-400 mb-2">10+</p>
+                        <p class="text-gray-200">Years Warranty</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <p class="text-5xl font-bold text-yellow-400 mb-2">3000+</p>
+                        <p class="text-gray-200">Installations</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <p class="text-5xl font-bold text-yellow-400 mb-2">90%</p>
+                        <p class="text-gray-200">Bill Reduction</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                        <p class="text-5xl font-bold text-yellow-400 mb-2">100%</p>
+                        <p class="text-gray-200">Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#1F2937] text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate-fadeInUp">
+                    <div class="flex items-center space-x-6 mr-6 mb-6">
+                        <div class="w-40 h-40  rounded-lg flex items-center justify-center">
+                            <img src="images/logo-4-2.png" class="rounded-2xl m-6" alt="" srcset="">
+                        </div>
+                        <!-- <div class="flex">
+                            <h3 class="text-xl font-bold">Sun Commerce</h3>
+                            <p class="text-sm text-gray-400">Solar Battery And Beyond</p>
+                        </div> -->
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We are one of the Australia's leading Solar retailers headquartered in Melbourne, Victoria.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Follow us:</h4>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div class="animate-fadeInUp delay-100">
+                    <h3 class="text-xl font-bold mb-6">Get in touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Unit 10/78, Willandra Drive,<br>
+                                    Epping, VIC - 3076
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@suncommerce.com.au"
+                                class="text-gray-300 hover:text-blue-400 transition">
+                                info@suncommerce.com.au
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+61404451977" class="text-gray-300 hover:text-blue-400 transition">
+                                +61 404 451 977
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate-fadeInUp delay-200">
+                    <h3 class="text-xl font-bold mb-6">Quick Link</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Residential.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Residential
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Commercial.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Commercial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="footer-link text-gray-300 hover:text-blue-400 transition inline-block">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="animate-fadeInUp delay-300">
+                    <h3 class="text-xl font-bold mb-6">Working hours</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div
+                                class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Monday - Friday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 05:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div
+                                class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Saturday</p>
+                                <p class="text-gray-400 text-sm">09:00 AM to 02:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sunday</p>
+                                <p class="text-gray-400 text-sm">Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        &copy;
+                        <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button> -->
+    <button class="scroll-to-top bg-[#1A2259]   fill-amber-50 size-8" id="backToTop" onclick="scrollToTop()">
+        <svg class="rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043"
+            enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+            <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+        </svg>
+    </button>
+
+    <script src="script/Storage.js"></script>
+</body>
+
+</html>

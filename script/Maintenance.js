@@ -63,3 +63,44 @@ backToTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Contact Button Actions
+const contactButtons = document.querySelectorAll(
+  "button:not(#mobile-menu-btn):not(#backToTop)"
+);
+contactButtons.forEach((button) => {
+  if (button.textContent.includes("Contact Us")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#contact";
+    });
+  }
+  if (button.textContent.includes("Residential")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#residential";
+    });
+  }
+  if (button.textContent.includes("Commercial")) {
+    button.addEventListener("click", () => {
+      window.location.href = "#commercial";
+    });
+  }
+});
+
+// Mobile menu toggle
+document
+  .getElementById("mobile-menu-btn")
+  .addEventListener("click", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+  });
+
+// Mobile dropdown functionality
+document.querySelectorAll(".mobile-dropdown-btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    const content = this.nextElementSibling;
+    const svg = this.querySelector("svg");
+
+    content.classList.toggle("hidden");
+    svg.classList.toggle("rotate-180");
+  });
+});

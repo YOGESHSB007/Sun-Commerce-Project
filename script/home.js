@@ -14,21 +14,22 @@
 //   });
 // });
 
-
- // Mobile menu toggle
- document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.toggle('hidden');
-});
+// Mobile menu toggle
+document
+  .getElementById("mobile-menu-btn")
+  .addEventListener("click", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+  });
 
 // Mobile dropdown functionality
-document.querySelectorAll('.mobile-dropdown-btn').forEach(button => {
-  button.addEventListener('click', function() {
-      const content = this.nextElementSibling;
-      const svg = this.querySelector('svg');
-      
-      content.classList.toggle('hidden');
-      svg.classList.toggle('rotate-180');
+document.querySelectorAll(".mobile-dropdown-btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    const content = this.nextElementSibling;
+    const svg = this.querySelector("svg");
+
+    content.classList.toggle("hidden");
+    svg.classList.toggle("rotate-180");
   });
 });
 
@@ -225,58 +226,55 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // Intersection Observer for animations
 const observerOptions4 = {
   threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const observer4 = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-      }
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = "running";
+    }
   });
 }, observerOptions4);
 
-document.querySelectorAll('.animate-fadeInUp').forEach(el => {
-  el.style.animationPlayState = 'paused';
+document.querySelectorAll(".animate-fadeInUp").forEach((el) => {
+  el.style.animationPlayState = "paused";
   observer4.observe(el);
 });
 
-
 // Smooth scroll for all anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-          target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-          });
-      }
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   });
 });
 
 // Add hover effect to social icons
-document.querySelectorAll('.social-icon').forEach(icon => {
-  icon.addEventListener('mouseenter', function() {
-      this.style.transform = 'translateY(-5px) scale(1.1) rotate(5deg)';
+document.querySelectorAll(".social-icon").forEach((icon) => {
+  icon.addEventListener("mouseenter", function () {
+    this.style.transform = "translateY(-5px) scale(1.1) rotate(5deg)";
   });
-  
-  icon.addEventListener('mouseleave', function() {
-      this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+
+  icon.addEventListener("mouseleave", function () {
+    this.style.transform = "translateY(0) scale(1) rotate(0deg)";
   });
 });
 
 // Dynamic year for copyright
-const yearElement = document.querySelector('footer p');
-if (yearElement && yearElement.textContent.includes('<?php')) {
+const yearElement = document.querySelector("footer p");
+if (yearElement && yearElement.textContent.includes("<?php")) {
   yearElement.textContent = `© ${new Date().getFullYear()} Sun Commerce. All rights reserved.`;
 }
-
 
 // Animate process timeline steps
 const processSteps = document.querySelectorAll(".process-timeline > div");
@@ -308,123 +306,148 @@ processSteps.forEach((step, index) => {
 });
 
 // Configuration
-const WHATSAPP_NUMBER = '610404451977'; // India country code + number
-const DEFAULT_MESSAGE = 'Hello! I am interested in solar energy solutions. Can you please help me?';
+const WHATSAPP_NUMBER = "610404451977"; // India country code + number
+const DEFAULT_MESSAGE =
+  "Hello! I am interested in solar energy solutions. Can you please help me?";
 
 // Elements
-const whatsappBtn = document.getElementById('whatsappBtn');
-const whatsappOverlay = document.getElementById('whatsappOverlay');
-const whatsappPopup = document.getElementById('whatsappPopup');
-const closePopup = document.getElementById('closePopup');
-const whatsappDMBtn = document.getElementById('whatsappDMBtn');
-const notificationBadge = document.getElementById('notificationBadge');
-const optionButtons = document.querySelectorAll('.option-btn');
+const whatsappBtn = document.getElementById("whatsappBtn");
+const whatsappOverlay = document.getElementById("whatsappOverlay");
+const whatsappPopup = document.getElementById("whatsappPopup");
+const closePopup = document.getElementById("closePopup");
+const whatsappDMBtn = document.getElementById("whatsappDMBtn");
+const notificationBadge = document.getElementById("notificationBadge");
+const optionButtons = document.querySelectorAll(".option-btn");
 
 // Open popup
-whatsappBtn.addEventListener('click', () => {
-    whatsappOverlay.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-    // Hide WhatsApp button and notification badge when popup is opened
-    whatsappBtn.style.display = 'none';
-    if (notificationBadge) {
-        notificationBadge.style.display = 'none';
-    }
+whatsappBtn.addEventListener("click", () => {
+  whatsappOverlay.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  // Hide WhatsApp button and notification badge when popup is opened
+  whatsappBtn.style.display = "none";
+  if (notificationBadge) {
+    notificationBadge.style.display = "none";
+  }
 });
 
 // Close popup
-closePopup.addEventListener('click', closeWhatsAppPopup);
+closePopup.addEventListener("click", closeWhatsAppPopup);
 
 // Close on overlay click
-whatsappOverlay.addEventListener('click', (e) => {
-    if (e.target === whatsappOverlay) {
-        closeWhatsAppPopup();
-    }
+whatsappOverlay.addEventListener("click", (e) => {
+  if (e.target === whatsappOverlay) {
+    closeWhatsAppPopup();
+  }
 });
 
 // Close popup function
 function closeWhatsAppPopup() {
-    whatsappOverlay.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-    // Show WhatsApp button when popup is closed
-    whatsappBtn.style.display = 'flex';
+  whatsappOverlay.classList.add("hidden");
+  document.body.style.overflow = "auto";
+  // Show WhatsApp button when popup is closed
+  whatsappBtn.style.display = "flex";
 }
 
 // Direct to WhatsApp on button click
-whatsappDMBtn.addEventListener('click', () => {
-    openWhatsApp(DEFAULT_MESSAGE);
+whatsappDMBtn.addEventListener("click", () => {
+  openWhatsApp(DEFAULT_MESSAGE);
 });
 
 // Option buttons click
 optionButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        let message = '';
-        switch(index) {
-            case 0:
-                message = 'Hi! I am interested in solar solutions. Can you provide more information?';
-                break;
-            case 1:
-                message = 'Hello! I would like to know more about residential solar installation.';
-                break;
-            case 2:
-                message = 'Hi! I need information about commercial solar systems.';
-                break;
-            default:
-                message = DEFAULT_MESSAGE;
-        }
-        openWhatsApp(message);
-    });
+  btn.addEventListener("click", () => {
+    let message = "";
+    switch (index) {
+      case 0:
+        message =
+          "Hi! I am interested in solar solutions. Can you provide more information?";
+        break;
+      case 1:
+        message =
+          "Hello! I would like to know more about residential solar installation.";
+        break;
+      case 2:
+        message = "Hi! I need information about commercial solar systems.";
+        break;
+      default:
+        message = DEFAULT_MESSAGE;
+    }
+    openWhatsApp(message);
+  });
 });
 
 // Open WhatsApp function
 function openWhatsApp(message) {
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
-    window.open(whatsappURL, '_blank');
-    closeWhatsAppPopup();
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+  window.open(whatsappURL, "_blank");
+  closeWhatsAppPopup();
 }
 
 // Close on Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !whatsappOverlay.classList.contains('hidden')) {
-        closeWhatsAppPopup();
-    }
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !whatsappOverlay.classList.contains("hidden")) {
+    closeWhatsAppPopup();
+  }
 });
 
 // Optional: Show notification badge after some time
 setTimeout(() => {
-    if (notificationBadge) {
-        notificationBadge.style.display = 'flex';
-    }
+  if (notificationBadge) {
+    notificationBadge.style.display = "flex";
+  }
 }, 3000);
-
-
 
 // Intersection Observer for scroll animations
 const observerOptions1 = {
   threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const observer1 = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          observer1.unobserve(entry.target);
-      }
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1";
+      observer1.unobserve(entry.target);
+    }
   });
 }, observerOptions1);
 
 // Observe all animated elements
-document.querySelectorAll('.opacity-0').forEach(el => {
+document.querySelectorAll(".opacity-0").forEach((el) => {
   observer1.observe(el);
 });
 
 // Button interactions
-document.querySelectorAll('button').forEach(button => {
-  button.addEventListener('click', function(e) {
-      this.style.transform = 'scale(0.95)';
-      setTimeout(() => {
-          this.style.transform = '';
-      }, 150);
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", function (e) {
+    this.style.transform = "scale(0.95)";
+    setTimeout(() => {
+      this.style.transform = "";
+    }, 150);
+  });
+});
+
+// Intersection Observer for scroll animations
+const observerOptions12 = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = "running";
+      cardObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions12);
+
+// Observe all service cards
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".service-card-item");
+  cards.forEach((card) => {
+    card.style.animationPlayState = "paused";
+    cardObserver.observe(card);
   });
 });
