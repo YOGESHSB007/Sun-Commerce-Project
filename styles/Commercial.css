@@ -158,7 +158,7 @@ html {
 }
 
 .hero-section {
-    background: linear-gradient(90deg, rgba(15, 32, 60, 0.85) 0%, rgba(30, 41, 59, 0.4) 100%), 
+    background: linear-gradient(90deg, rgba(124, 139, 163, 0.4) 0%, rgba(124, 139, 163, 0.4) 100%), 
                 url('../images/solar_panel_banner.webp') no-repeat ;
     background-size: cover;
     background-position: center;
