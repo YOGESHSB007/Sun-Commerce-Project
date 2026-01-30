@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,114 +11,138 @@
     <link href="styles/output.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/ChatGPT Image Dec 19, 2025, 11_48_42 PM.png">
 </head>
+
 <body class="bg-gray-50">
     <nav id="navbar"
-    class="navbar-dark shadow-lg bg-[#2779a6] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
-    <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-3">
-            <!-- Logo -->
-            <div class="flex items-center flex-col">
-                <div class="flex justify-center items-center">
-                    <a href="index.html" class="w-14 pr-1 text-blue-600"><img src="images/logo ttoopp.png" alt="logo"></a>
-                    <a href="index.html" class="w-24 text-blue-600"><img src="images/logo ddoodo.png" alt="logos"></a>
+        class="navbar-dark shadow-lg bg-[#2779a6] transition-all duration-300 z-50 fixed top-0 left-0 right-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center flex-col">
+                    <div class="flex justify-center items-center">
+                        <a href="index.html" class="w-14 pr-1 text-blue-600"><img src="images/logo ttoopp.png"
+                                alt="logo"></a>
+                        <a href="index.html" class="w-24 text-blue-600"><img src="images/logo ddoodo.png"
+                                alt="logos"></a>
+                    </div>
+                    <span class="text-xs  font-thin text-white">SOLAR BATTERY AND BEYOND</span>
                 </div>
-                <span class="text-xs  font-thin text-white">SOLAR BATTERY AND BEYOND</span>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex justify-center space-x-8 items-center">
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                            Solutions
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="Residential.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Residential</a>
+                            <a href="Commercial.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Commercial</a>
+                            <a href="Storage.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Storage</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Dropdown -->
+                    <div class="relative group">
+                        <button class="text-white hover:text-green-400 transition font-medium flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="battary+solar.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar
+                                + battery installations</a>
+                            <a href="Ev.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">EV
+                                chargers</a>
+                            <a href="Maintenance.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Maintenance</a>
+                            <a href="solaraudits.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar
+                                audits</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
+                    <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
+                    <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <button onclick="window.location.href='contact.html#contactForm'"
+                        class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
+                        <span>Free Quote Today</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex justify-center space-x-8 items-center">
-                <!-- Solutions Dropdown -->
-                <div class="relative group">
-                    <button class="text-white hover:text-green-400 transition font-medium flex items-center">
-                        Solutions
-                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                        <span>Solutions</span>
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
-                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                        <a href="Residential.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Residential</a>
-                        <a href="Commercial.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Commercial</a>
-                        <a href="Storage.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Storage</a>
+                    <div class="mobile-dropdown-content hidden pl-4">
+                        <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
+                        <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
+                        <a href="Storage.html" class="block py-2 text-white hover:text-green-400">Storage</a>
                     </div>
                 </div>
 
-                <!-- Services Dropdown -->
-                <div class="relative group">
-                    <button class="text-white hover:text-green-400 transition font-medium flex items-center">
-                        Services
-                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <!-- Services Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
+                        <span>Services</span>
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
-                    <div class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                        <a href="battary+solar.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar + battery installations</a>
-                        <a href="Ev.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">EV chargers</a>
-                        <a href="Maintenance.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Maintenance</a>
-                        <a href="solaraudits.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-100 hover:text-[#1A2259] transition">Solar audits</a>
+                    <div class="mobile-dropdown-content hidden pl-4">
+                        <a href="battary+solar.html" class="block py-2 text-white hover:text-green-400">Solar + battery
+                            installations</a>
+                        <a href="Ev.html" class="block py-2 text-white hover:text-green-400">EV chargers</a>
+                        <a href="Maintenance.html" class="block py-2 text-white hover:text-green-400">Maintenance</a>
+                        <a href="solaraudits.html" class="block py-2 text-white hover:text-green-400">Solar audits</a>
                     </div>
                 </div>
 
-                <a href="aboutus.html" class="text-white hover:text-green-400 transition font-medium">About Us</a>
-                <a href="contact.html" class="text-white hover:text-green-400 transition font-medium">Contact Us</a>
-                <a href="blogs.html" class="text-white hover:text-green-400 transition font-medium">Blogs</a>
-            </div>
-
-            <div class="hidden md:flex">
+                <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
+                <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
+                <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
                 <button onclick="window.location.href='contact.html#contactForm'"
-                    class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 flex items-center space-x-2">
-                    <span>Free Quote Today</span>
-                    <i class="fas fa-arrow-right"></i>
+                    class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
+                    Free Quote Today
                 </button>
             </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-white">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-            <!-- Solutions Mobile Dropdown -->
-            <div class="mobile-dropdown">
-                <button class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
-                    <span>Solutions</span>
-                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div class="mobile-dropdown-content hidden pl-4">
-                    <a href="Residential.html" class="block py-2 text-white hover:text-green-400">Residential</a>
-                    <a href="Commercial.html" class="block py-2 text-white hover:text-green-400">Commercial</a>
-                    <a href="Storage.html" class="block py-2 text-white hover:text-green-400">Storage</a>
-                </div>
-            </div>
-
-            <!-- Services Mobile Dropdown -->
-            <div class="mobile-dropdown">
-                <button class="mobile-dropdown-btn w-full text-left py-2 text-white hover:text-green-400 flex justify-between items-center">
-                    <span>Services</span>
-                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div class="mobile-dropdown-content hidden pl-4">
-                    <a href="battary+solar.html" class="block py-2 text-white hover:text-green-400">Solar + battery installations</a>
-                    <a href="Ev.html" class="block py-2 text-white hover:text-green-400">EV chargers</a>
-                    <a href="Maintenance.html" class="block py-2 text-white hover:text-green-400">Maintenance</a>
-                    <a href="solaraudits.html" class="block py-2 text-white hover:text-green-400">Solar audits</a>
-                </div>
-            </div>
-
-            <a href="aboutus.html" class="block py-2 text-white hover:text-green-400">About Us</a>
-            <a href="contact.html" class="block py-2 text-white hover:text-green-400">Contact us</a>
-            <a href="blogs.html" class="block py-2 text-white hover:text-green-400">Blogs</a>
-            <button onclick="window.location.href='contact.html#contactForm'"
-                class="bg-green-500 text-white px-6 py-2 rounded-full font-semibold mt-2 w-full">
-                Free Quote Today
-            </button>
-        </div>
-    </div>
     </nav>
     <!-- Breadcrumb Section -->
     <section class="hero-section py-20 relative overflow-hidden">
@@ -141,12 +166,13 @@
     <!-- Contact Hero Section -->
     <section class="gradient-bg text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <!-- Decorative elements -->
-        
-        
+
+
         <div class="max-w-7xl mx-auto text-center text-[#1A2259] relative z-10">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 opacity-0 animate-fadeInUp ">Let's Get In Touch</h1>
             <p class="text-xl text-gray-500 max-w-2xl mx-auto opacity-0 animate-fadeInUp delay-200">
-                Have questions about solar solutions? Our team of experts is ready to help you make the switch to clean, renewable energy.
+                Have questions about solar solutions? Our team of experts is ready to help you make the switch to clean,
+                renewable energy.
             </p>
             <div class="mt-8 flex flex-wrap justify-center gap-4 opacity-0 animate-fadeInUp delay-400">
                 <div class="flex items-center gap-2 glass-effect px-6 py-3 rounded-full">
@@ -158,13 +184,17 @@
                 </div>
                 <div class="flex items-center gap-2 glass-effect px-6 py-3 rounded-full">
                     <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                            clip-rule="evenodd"></path>
                     </svg>
                     <span class="text-sm md:text-base">Expert Advice</span>
                 </div>
                 <div class="flex items-center gap-2 glass-effect px-6 py-3 rounded-full">
                     <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        <path fill-rule="evenodd"
+                            d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
                     </svg>
                     <span class="text-sm md:text-base">Free Consultation</span>
                 </div>
@@ -176,90 +206,69 @@
     <section id="contactForm" class="py-20 px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-12">
-                
+
                 <!-- Contact Form -->
                 <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 opacity-0 animate-slideInLeft">
                     <div class="mb-8">
                         <h2 class="text-3xl md:text-4xl font-bold text-[#1A2259] mb-3">Send Us a Message</h2>
-                        <p class="text-gray-600">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        <p class="text-gray-600">Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
                     </div>
 
                     <form id="contactForm" class="space-y-6">
                         <!-- Name Input -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
-                            <input 
-                                type="text" 
-                                name="name"
-                                required
-                                placeholder="John Doe"
-                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50"
-                            />
+                            <input type="text" name="name" required placeholder="John Doe"
+                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50" />
                         </div>
 
                         <!-- Email Input -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Your Email *</label>
-                            <input 
-                                type="email" 
-                                name="email"
-                                required
-                                placeholder="john@example.com"
-                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50"
-                            />
+                            <input type="email" name="email" required placeholder="john@example.com"
+                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50" />
                         </div>
 
                         <!-- Phone Input -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Your Phone *</label>
-                            <input 
-                                type="tel" 
-                                name="phone"
-                                required
-                                placeholder="+61 404 451 977"
-                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50"
-                            />
+                            <input type="tel" name="phone" required placeholder="+61 404 451 977"
+                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50" />
                         </div>
 
                         <!-- Subject Input -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Subject *</label>
-                            <input 
-                                type="text" 
-                                name="subject"
-                                required
-                                placeholder="Solar Installation Inquiry"
-                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50"
-                            />
+                            <input type="text" name="subject" required placeholder="Solar Installation Inquiry"
+                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50" />
                         </div>
 
                         <!-- Message Input -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Your Message *</label>
-                            <textarea 
-                                name="message"
-                                required
-                                rows="5"
+                            <textarea name="message" required rows="5"
                                 placeholder="Tell us about your solar energy needs..."
-                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50 resize-none"
-                            ></textarea>
+                                class="w-full px-4 py-4 rounded-xl input-focus bg-gray-50 resize-none"></textarea>
                         </div>
 
                         <!-- Submit Button -->
-                        <button 
-                            type="submit"
-                            class="w-full bg-[#1A2259] hover:bg-[#2A3479] text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                        >
+                        <button type="submit"
+                            class="w-full bg-[#1A2259] hover:bg-[#2A3479] text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
                             <span>Send Message</span>
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </button>
 
                         <!-- Success Message -->
-                        <div id="successMessage" class="success-message items-center gap-3 p-4 bg-green-100 text-green-800 rounded-xl">
+                        <div id="successMessage"
+                            class="success-message items-center gap-3 p-4 bg-green-100 text-green-800 rounded-xl">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                             <span class="font-semibold">Message sent successfully! We'll get back to you soon.</span>
                         </div>
@@ -268,18 +277,23 @@
 
                 <!-- Contact Information -->
                 <div class="space-y-6 opacity-0 animate-slideInRight delay-200">
-                    
+
                     <!-- Contact Info Card -->
                     <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10">
                         <h3 class="text-2xl font-bold text-[#1A2259] mb-8">Contact Information</h3>
-                        
+
                         <div class="space-y-6">
                             <!-- Address -->
                             <div class="flex gap-4 group">
-                                <div class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <div
+                                    class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
+                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                 </div>
                                 <div>
@@ -290,27 +304,38 @@
 
                             <!-- Phone -->
                             <div class="flex gap-4 group">
-                                <div class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                <div
+                                    class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
+                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-900 mb-1">Phone</h4>
-                                    <a href="tel:+61404451977" class="text-[#1A2259] hover:text-yellow-600 font-semibold transition-colors">+61 404 451 977</a>
+                                    <a href="tel:+61404451977"
+                                        class="text-[#1A2259] hover:text-yellow-600 font-semibold transition-colors">+61
+                                        404 451 977</a>
                                 </div>
                             </div>
 
                             <!-- Email -->
                             <div class="flex gap-4 group">
-                                <div class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <div
+                                    class="flex-shrink-0 w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
+                                    <svg class="w-7 h-7 text-[#1A2259]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-900 mb-1">Email</h4>
-                                    <a href="mailto:info@suncommerce.com.au" class="text-[#1A2259] hover:text-yellow-600 font-semibold transition-colors">info@suncommerce.com.au</a>
+                                    <a href="mailto:info@suncommerce.com.au"
+                                        class="text-[#1A2259] hover:text-yellow-600 font-semibold transition-colors">info@suncommerce.com.au</a>
                                 </div>
                             </div>
                         </div>
@@ -320,11 +345,13 @@
                     <div class="gradient-bg1 text-white rounded-3xl shadow-2xl p-8 md:p-10">
                         <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
                             <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                             Working Hours
                         </h3>
-                        
+
                         <div class="space-y-4">
                             <div class="flex justify-between items-center pb-4 border-b border-white border-opacity-20">
                                 <span class="font-semibold">Monday – Friday</span>
@@ -342,7 +369,8 @@
 
                         <div class="mt-8 p-4 bg-white bg-opacity-10 rounded-2xl backdrop-blur-sm">
                             <p class="text-sm text-gray-200">
-                                <span class="font-semibold text-yellow-400">💡 Pro Tip:</span> Book your free consultation during weekdays for the fastest response!
+                                <span class="font-semibold text-yellow-400">💡 Pro Tip:</span> Book your free
+                                consultation during weekdays for the fastest response!
                             </p>
                         </div>
                     </div>
@@ -362,15 +390,10 @@
 
             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden opacity-0 animate-scaleIn delay-200">
                 <div class="aspect-w-16 aspect-h-9 h-96 md:h-[500px]">
-                    <iframe 
+                    <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.7234066665376!2d145.01831!3d-37.6518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646c5e6a9b7c5%3A0x5045675218ce6e0!2s78%20Willandra%20Dr%2C%20Epping%20VIC%203076%2C%20Australia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="map-container">
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map-container">
                     </iframe>
                 </div>
             </div>
@@ -382,14 +405,18 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 opacity-0 animate-fadeInUp">
                 <h2 class="text-4xl md:text-5xl font-bold text-[#1A2259] mb-4">Why Choose Sun Commerce?</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We're committed to providing the best solar solutions with exceptional customer service</p>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We're committed to providing the best solar solutions
+                    with exceptional customer service</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center opacity-0 animate-fadeInUp delay-100">
-                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
+                    <div
+                        class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                            </path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-[#1A2259] mb-3">Certified Experts</h3>
@@ -397,9 +424,12 @@
                 </div>
 
                 <div class="text-center opacity-0 animate-fadeInUp delay-200">
-                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
+                    <div
+                        class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-[#1A2259] mb-3">Best Prices</h3>
@@ -407,9 +437,11 @@
                 </div>
 
                 <div class="text-center opacity-0 animate-fadeInUp delay-300">
-                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
+                    <div
+                        class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-[#1A2259] mb-3">Quality Products</h3>
@@ -417,9 +449,12 @@
                 </div>
 
                 <div class="text-center opacity-0 animate-fadeInUp delay-400">
-                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
+                    <div
+                        class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 transform hover:rotate-12 transition-transform">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-[#1A2259] mb-3">24/7 Support</h3>
@@ -439,50 +474,74 @@
 
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fadeInUp delay-100">
-                    <button class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                        onclick="toggleFAQ(this)">
                         <span class="text-lg font-bold text-[#1A2259]">How long does solar installation take?</span>
-                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content hidden px-8 pb-6">
-                        <p class="text-gray-600">Most residential solar installations take 1-3 days to complete, depending on the system size and complexity. We handle all permits and inspections to make the process seamless.</p>
+                        <p class="text-gray-600">Most residential solar installations take 1-3 days to complete,
+                            depending on the system size and complexity. We handle all permits and inspections to make
+                            the process seamless.</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fadeInUp delay-200">
-                    <button class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                        onclick="toggleFAQ(this)">
                         <span class="text-lg font-bold text-[#1A2259]">What rebates are available?</span>
-                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content hidden px-8 pb-6">
-                        <p class="text-gray-600">Australian homeowners can access government rebates, STCs (Small-scale Technology Certificates), and interest-free loan options. We help you navigate all available incentives to maximize your savings.</p>
+                        <p class="text-gray-600">Australian homeowners can access government rebates, STCs (Small-scale
+                            Technology Certificates), and interest-free loan options. We help you navigate all available
+                            incentives to maximize your savings.</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fadeInUp delay-300">
-                    <button class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                        onclick="toggleFAQ(this)">
                         <span class="text-lg font-bold text-[#1A2259]">Do you offer warranties?</span>
-                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content hidden px-8 pb-6">
-                        <p class="text-gray-600">Yes! Our solar panels come with 25-year performance warranties, inverters with 7-10 year warranties, and we provide installation warranties. All our products are from trusted manufacturers.</p>
+                        <p class="text-gray-600">Yes! Our solar panels come with 25-year performance warranties,
+                            inverters with 7-10 year warranties, and we provide installation warranties. All our
+                            products are from trusted manufacturers.</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fadeInUp delay-400">
-                    <button class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                    <button
+                        class="faq-button w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                        onclick="toggleFAQ(this)">
                         <span class="text-lg font-bold text-[#1A2259]">How much can I save on electricity bills?</span>
-                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <svg class="w-6 h-6 text-yellow-500 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content hidden px-8 pb-6">
-                        <p class="text-gray-600">Most homeowners save 50-90% on their electricity bills. The exact savings depend on your system size, energy consumption, and location. Contact us for a personalized savings estimate.</p>
+                        <p class="text-gray-600">Most homeowners save 50-90% on their electricity bills. The exact
+                            savings depend on your system size, energy consumption, and location. Contact us for a
+                            personalized savings estimate.</p>
                     </div>
                 </div>
             </div>
@@ -494,25 +553,32 @@
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 opacity-0 animate-fadeInUp">Ready to Go Solar?</h2>
             <p class="text-xl text-gray-500 mb-10 opacity-0 animate-fadeInUp delay-200">
-                Take the first step towards energy independence. Our team is ready to help you design the perfect solar solution for your home.
+                Take the first step towards energy independence. Our team is ready to help you design the perfect solar
+                solution for your home.
             </p>
-            <div  class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fadeInUp delay-400">
-                <button onclick="window.location.href='contact.html#contactForm'" class="bg-yellow-500 hover:bg-yellow-600 text-[#1A2259] font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fadeInUp delay-400">
+                <button onclick="window.location.href='contact.html#contactForm'"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-[#1A2259] font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                        </path>
                     </svg>
                     <span>Call Now</span>
                 </button>
-                <button onclick="window.location.href='contact.html#contactForm'" class="bg-gray-200 hover:bg-gray-300 text-[#1A2259] font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                <button onclick="window.location.href='contact.html#contactForm'"
+                    class="bg-gray-200 hover:bg-gray-300 text-[#1A2259] font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
                     </svg>
                     <span>Get Free Quote</span>
                 </button>
-            </div>  
+            </div>
         </div>
     </section>
-    
+
     <footer class="bg-[#1F2937] text-white">
         <div class="container mx-auto px-4 py-12">
             <div class="grid md:grid-cols-4 gap-8">
@@ -533,16 +599,20 @@
                     <div>
                         <h4 class="font-semibold mb-3">Follow us:</h4>
                         <div class="flex space-x-3">
-                            <a href="#" class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-300">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#" class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
+                            <a href="#"
+                                class="social-icon w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -554,7 +624,8 @@
                     <h3 class="text-xl font-bold mb-6">Get in touch</h3>
                     <div class="space-y-4">
                         <div class="flex items-start space-x-3">
-                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
@@ -565,15 +636,18 @@
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <a href="mailto:info@suncommerce.com.au" class="text-gray-300 hover:text-blue-400 transition">
+                            <a href="mailto:info@suncommerce.com.au"
+                                class="text-gray-300 hover:text-blue-400 transition">
                                 info@suncommerce.com.au
                             </a>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <a href="tel:+61404451977" class="text-gray-300 hover:text-blue-400 transition">
@@ -625,7 +699,8 @@
                     <h3 class="text-xl font-bold mb-6">Working hours</h3>
                     <div class="space-y-4">
                         <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
@@ -634,7 +709,8 @@
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
@@ -661,7 +737,8 @@
             <div class="container mx-auto px-4 py-6">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <p class="text-gray-400 text-sm text-center md:text-left">
-                        &copy; <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
+                        &copy;
+                        <?php echo date('Y'); ?> Sun Commerce. All rights reserved.
                     </p>
                     <div class="flex space-x-6 text-sm">
                         <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
@@ -685,7 +762,22 @@
         </svg>
     </button>
 
+
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Initialize EmailJS -->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("QLtSPGcnpO4pF7RCC"); // Replace with your public key
+        })();
+    </script>
+
+    <!-- Contact Form Script -->
+    
     <script src="script/contact.js"></script>
 
 </body>
+
 </html>
